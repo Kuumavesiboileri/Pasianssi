@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="dcb-28" name="Kortti.ArvoTest" tests="4" time="0.076" timestamp="2012-03-23T12:13:43">
+<testsuite errors="0" failures="0" hostname="dcb-28" name="Pasianssi.PinoFaceUpTest" tests="3" time="0.064" timestamp="2012-03-23T12:13:45">
   <properties>
     <property name="libs.jsp-compiler.javadoc" value="" />
     <property name="netbeans.autoupdate.country" value="FI" />
@@ -67,7 +67,7 @@
     <property name="libs.jsf12.javadoc" value="/opt/netbeans-7.0.1/enterprise/docs/javaee6-doc-api.zip" />
     <property name="libs.spring-webmvc3.0.maven-pom" value="" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner Kortti.ArvoTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/fs-0/8/atteaalt/NetBeansProjects/Pasianssi/build/test/results/TEST-Kortti.ArvoTest.xml crashfile=/fs-0/8/atteaalt/NetBeansProjects/Pasianssi/build/junitvmwatcher2077169136253628104.properties propsfile=/fs-0/8/atteaalt/NetBeansProjects/Pasianssi/build/junit8815044614971003371.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner Pasianssi.PinoFaceUpTest filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/fs-0/8/atteaalt/NetBeansProjects/Pasianssi/build/test/results/TEST-Pasianssi.PinoFaceUpTest.xml crashfile=/fs-0/8/atteaalt/NetBeansProjects/Pasianssi/build/junitvmwatcher3578111088709058296.properties propsfile=/fs-0/8/atteaalt/NetBeansProjects/Pasianssi/build/junit7728317244912474019.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -432,10 +432,9 @@
     <property name="javadoc.nonavbar" value="false" />
     <property name="platform.active" value="default_platform" />
   </properties>
-  <testcase classname="Kortti.ArvoTest" name="liianSuuriArvoPaatyyVirheeseen" time="0.0040" />
-  <testcase classname="Kortti.ArvoTest" name="liianPieniArvoPaatyyVihreeseen" time="0.0010" />
-  <testcase classname="Kortti.ArvoTest" name="arvonLuontiToimiiAnnetuissaRajoissa" time="0.0" />
-  <testcase classname="Kortti.ArvoTest" name="compareToTulosPositiivinen" time="0.0" />
+  <testcase classname="Pasianssi.PinoFaceUpTest" name="lisataanKymmenenJaPoistetaanNeljaKorttiaPoistetutOikein" time="0.0040" />
+  <testcase classname="Pasianssi.PinoFaceUpTest" name="lisataanKymmenenJaPoistetaanNeljaKorttiaJaljelleJaaOikeaMaara" time="0.0" />
+  <testcase classname="Pasianssi.PinoFaceUpTest" name="poisetaanPaikastaKorttejaKortitOikeassaJarjestyksessa" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

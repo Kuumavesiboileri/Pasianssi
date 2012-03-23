@@ -11,7 +11,7 @@ import Kortti.Maa;
  *
  * @author atte
  */
-public class Korttipakka extends Korttipino{
+public class Korttipakka extends PinoFifo{
     public Korttipakka(){
         lista = new LinkedList<Kortti>();
         
