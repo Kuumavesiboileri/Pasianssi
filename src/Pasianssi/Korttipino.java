@@ -7,20 +7,27 @@ import Kortti.Kortti;
 
 public class Korttipino {
     
-    protected LinkedList<Kortti> pino;
+    protected LinkedList<Kortti> lista;
     
     public Korttipino(){
-        pino = new LinkedList<Kortti>();
+        lista = new LinkedList<Kortti>();
     }
     
+    public Kortti removeKortti(){
+        return lista.removeLast();
+    }
     public Kortti getKortti(){
-        return pino.removeLast();
+        return lista.getLast();
     }
     
     public void setKortti(Kortti kortti){
-        pino.add(kortti);
+        lista.add(kortti);
     }
     public int getKoko(){
-        return pino.size();
+        return lista.size();
+    }
+
+    public boolean isEmpty(){
+        return lista.isEmpty();
     }
 }

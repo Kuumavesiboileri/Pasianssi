@@ -6,27 +6,28 @@ package Pasianssi;
 import java.util.LinkedList;
 import java.util.Collections;
 import Kortti.Kortti;
+import Kortti.Maa;
 /**
  *
  * @author atte
  */
 public class Korttipakka extends Korttipino{
     public Korttipakka(){
-        pino = new LinkedList<Kortti>();
+        lista = new LinkedList<Kortti>();
         
         for (int i = 1; i <= 13; i++)
-            pino.add(new Kortti("hertta",i));        
+            lista.add(new Kortti(Maa.HERTTA,i));        
         
         for (int i = 1; i <= 13; i++)
-            pino.add(new Kortti("risti",i));    
+            lista.add(new Kortti(Maa.RISTI,i));    
         
         for (int i = 1; i <= 13; i++)
-            pino.add(new Kortti("ruutu",i));
+            lista.add(new Kortti(Maa.RUUTU,i));
                 
         for (int i = 1; i <= 13; i++)
-            pino.add(new Kortti("pata",i));
+            lista.add(new Kortti(Maa.PATA,i));
     }
         public void sekoita(){
-        Collections.shuffle(pino);
+        Collections.shuffle(lista);
     }
 }

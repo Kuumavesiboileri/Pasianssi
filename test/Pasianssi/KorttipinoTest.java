@@ -42,27 +42,30 @@ public class KorttipinoTest {
 
     @Test
     public void getKokoNayttaaOikein(){
+        Maa ruutu = Maa.RUUTU;
         for(int i = 0; i < 5; i++)
-            pino.setKortti(new Kortti("ruutu", 2));
+            pino.setKortti(new Kortti(ruutu, 2));
         assertEquals(5, pino.getKoko());
         for(int i = 0; i < 3; i++)
-            pino.setKortti(new Kortti("ruutu", 2));
+            pino.setKortti(new Kortti(ruutu, 2));
         assertEquals(8, pino.getKoko());
     }
   
     @Test
     public void listaanJaPoistetaanYksiKortti(){
-        pino.setKortti(new Kortti("pata", 1));
-        assertEquals(1, pino.getKortti().getArvo());
+        Maa pata = Maa.PATA;
+        pino.setKortti(new Kortti(pata, 1));
+        assertEquals(1, pino.removeKortti().getArvo());
     }
     
     @Test
     public void listaanJaPoistetaanKolmeKorttia(){
-        pino.setKortti(new Kortti("pata", 1));
-        pino.setKortti(new Kortti("pata", 2));
-        pino.setKortti(new Kortti("pata", 3));
-        assertEquals(3, pino.getKortti().getArvo());
-        assertEquals(2, pino.getKortti().getArvo());
-        assertEquals(1, pino.getKortti().getArvo());
+        Maa pata = Maa.PATA;
+        pino.setKortti(new Kortti(pata, 1));
+        pino.setKortti(new Kortti(pata, 2));
+        pino.setKortti(new Kortti(pata, 3));
+        assertEquals(3, pino.removeKortti().getArvo());
+        assertEquals(2, pino.removeKortti().getArvo());
+        assertEquals(1, pino.removeKortti().getArvo());
     }
 }

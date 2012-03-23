@@ -35,9 +35,14 @@ public class KorttiTest {
     
     @Before
     public void setUp() {
-        ruutuAssa = new Kortti ("ruutu" ,1);
-        herttaViisi = new Kortti("hertta" ,5);
-        herttaAssa = new Kortti ("hertta", 1);
+        Maa ruutu = Maa.RUUTU;
+        Maa risti = Maa.RISTI;
+        Maa hertta = Maa.HERTTA;
+        
+        
+        ruutuAssa = new Kortti (ruutu ,1);
+        herttaViisi = new Kortti(hertta ,5);
+        herttaAssa = new Kortti (hertta, 1);
     }
     
     @After

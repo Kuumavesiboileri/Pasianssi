@@ -8,22 +8,22 @@ package Kortti;
  *
  * @author atte
  */
+
 public class Kortti {
     
     private Arvo arvo;
     private Maa maa;
     
-    public Kortti(String maaNimi, int lukuArvo) throws IllegalArgumentException{
+    public Kortti(Maa maa, int lukuArvo) throws IllegalArgumentException{
         this.arvo = new Arvo(lukuArvo);
-        this.maa= new Maa(maaNimi);
-    }
+        }
     
     public int getArvo(){
         return arvo.getArvo();
     }
     
     public String getMaa(){
-        return maa.getMaa();
+        return maa.toString();
     }
     
     
@@ -31,12 +31,19 @@ public class Kortti {
         return this.arvo.getArvo() - toinenKortti.getArvo();
     }
     public boolean samaaMaata(Kortti toinenKortti){
-        return this.maa.equals(toinenKortti.maa);
+        return this.maa == toinenKortti.maa;
     }
     
     public boolean samaaVaria(Kortti toinenKortti){
-        return this.maa.getVari() == toinenKortti.maa.getVari();
-            
+        if (this.maa == Maa.HERTTA || this.maa == Maa.RUUTU)
+            if (toinenKortti.maa == Maa.HERTTA || toinenKortti.maa == Maa.RUUTU)
+                return false;
+            if (this.maa == Maa.PATA || this.maa == Maa.RISTI)
+                if (toinenKortti.maa == Maa.PATA || toinenKortti.maa == Maa.RISTI)
+                    return false;
+        return true;
+        
+        
     }
     
     public String toString(){
@@ -44,5 +51,4 @@ public class Kortti {
     }
      
     
-   
 }
