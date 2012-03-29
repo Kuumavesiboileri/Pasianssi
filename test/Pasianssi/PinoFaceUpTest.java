@@ -61,6 +61,10 @@ public class PinoFaceUpTest {
         paikka.getKortti(11);
     }*/
     
+    @Test
+    public void kolmanneksiPäällimmäinenKorttiOnOikein(){
+        assertEquals(8,paikka.getKortti(3).getArvo());
+    }
     @Test 
     public void lisataanKymmenenJaPoistetaanNeljaKorttiaPoistetutOikein(){
         
@@ -73,7 +77,11 @@ public class PinoFaceUpTest {
         paikka.removeKortti(4);
         assertEquals(6, paikka.getKoko());
     }
-    
+        @Test(expected = IndexOutOfBoundsException.class)
+    public void lisataanKymmenenJaPoistetaanYksitoistaPaatyyVirheilmoitukseen(){
+        paikka.removeKortti(11);
+        
+    }
     @Test
     public void poisetaanPaikastaKorttejaKortitOikeassaJarjestyksessa(){
         PinoFaceUp dummy = paikka.removeKortti(4);

@@ -1,0 +1,5 @@
+Luokilla "Jakopakka" ja "Maalipakka" ei ole vielä testimetodeja, kun nuo aamulla kiireessä väsäsin.
+Luokka "Peli" on toistaiseksi pelkkä torso.
+
+
+En pääse perjantaina paikalle, joten lähetätkö mahdolliset kommentit joko spostiin (atte.aaltonen@helsinki.fi) tai ircissä (Adio@ircnet)

@@ -21,6 +21,7 @@ public class KorttiTest {
     Kortti ruutuAssa;
     Kortti herttaViisi;
     Kortti herttaAssa;
+    Kortti ristiSeiska;
     
     public KorttiTest() {
     }
@@ -34,15 +35,12 @@ public class KorttiTest {
     }
     
     @Before
-    public void setUp() {
-        Maa ruutu = Maa.RUUTU;
-        Maa risti = Maa.RISTI;
-        Maa hertta = Maa.HERTTA;
+    public void setUp() {        
         
-        
-        ruutuAssa = new Kortti (ruutu ,1);
-        herttaViisi = new Kortti(hertta ,5);
-        herttaAssa = new Kortti (hertta, 1);
+        ruutuAssa = new Kortti (Maa.RUUTU ,1);
+        herttaViisi = new Kortti(Maa.HERTTA ,5);
+        herttaAssa = new Kortti (Maa.HERTTA, 1);
+        ristiSeiska = new Kortti (Maa.RISTI, 7);
     }
     
     @After
@@ -50,13 +48,20 @@ public class KorttiTest {
     }
     
     @Test
-    public void maidenVertausToimii(){
+    public void maidenVertausToimiiJosSamaaMaata(){
         assertTrue(herttaViisi.samaaMaata(herttaAssa));
     }
-    
     @Test
-    public void varienVertausToimii(){
+    public void maidenVertausToimiiJosEriMaata(){
+        assertFalse(herttaViisi.samaaMaata(ristiSeiska));
+    }
+    @Test
+    public void varienVertausToimiiJosSamaaVaria(){
         assertTrue(ruutuAssa.samaaVaria(herttaViisi));
+    }
+    @Test
+    public void varienVertausToimiiJosEriVaria(){
+        assertFalse(ruutuAssa.samaaMaata(ristiSeiska));
     }
     
 }

@@ -5,8 +5,9 @@
 package Kortti;
 
 /**
- *
- * @author atteaalt
+ * Kortti -olion luonnissa käytetty enum. Hyväksyttäviä arvoja PATA, HERTTA, RISTI, RUUTU.
+ * @author Adio
+ * @see Kortti
  */
 public enum Maa {
     PATA, HERTTA, RISTI, RUUTU;

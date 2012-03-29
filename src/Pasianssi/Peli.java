@@ -4,13 +4,13 @@ import Kortti.Kortti;
 
 
 public class Peli {
-    Slotti[] slotti;
+    Pelipakka[] slotti;
     
     public Peli(){
-        Korttipakka pakka = new Korttipakka();
+        Alkupakka pakka = new Alkupakka();
         pakka.sekoita();
         
-        slotti = new Slotti[7];
+        slotti = new Pelipakka[7];
         
     }
 }
