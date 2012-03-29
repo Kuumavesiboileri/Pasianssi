@@ -1,3 +1,5 @@
+Ilmeisesti pushaaminen githubin repoon ei poistakkaan uudimmasta .gitistäni poistamiani luokkia. Tuolla classin ja testien alla pyörii siis nyt kasa metodeja, joita peli ei käytä (Tämä käsittää oikeastaan kaikki ei viime pushauksessa löytyvät luokat).
+
 Luokilla "Jakopakka" ja "Maalipakka" ei ole vielä testimetodeja, kun nuo aamulla kiireessä väsäsin.
 Luokka "Peli" on toistaiseksi pelkkä torso.
 
