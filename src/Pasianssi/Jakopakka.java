@@ -35,6 +35,17 @@ public class Jakopakka {
      * ensimmäinen oikeinpäin oleva kortti.
      * 
      */
+    public Kortti removePaallimmainen(){
+        if(paallimmaiset.isEmpty()){
+           
+            if(oikeinpain.isEmpty())
+               return null;
+           
+           return oikeinpain.removeKortti();
+        }
+        
+        return paallimmaiset.removeLast();
+    }
     public LinkedList<Kortti> getPaallimmaiset(){
         if (paallimmaiset.isEmpty()){
             if(oikeinpain.isEmpty()){
@@ -59,6 +70,6 @@ public class Jakopakka {
             oikeinpain.setKortti(paallimmaiset.removeFirst());
         
         while(paallimmaiset.size() < 3 && !vaarinpain.isEmpty())
-            paallimmaiset.addLast(vaarinpain.getKortti());
+            paallimmaiset.addLast(vaarinpain.removeKortti());
     }
 }
