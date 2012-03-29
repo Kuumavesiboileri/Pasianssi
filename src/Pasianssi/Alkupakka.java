@@ -42,9 +42,17 @@ public class Alkupakka{
         Collections.shuffle(lista);
     }
     
+    /**
+     * Palauttaa pakan päällimmäisen kortin.
+     * @return Päällimmäinen kortti.
+     */
     public Kortti getKortti(){
         return lista.removeLast();
     }
+    /**
+     * Palauttaa linkitettynä listana alkupakan sisällön.
+     * @return Pakan sisältö.
+     */
     public LinkedList<Kortti> getPakka(){
         return lista;
     }

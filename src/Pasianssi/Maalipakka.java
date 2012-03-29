@@ -41,6 +41,11 @@ public class Maalipakka {
         return false;
         
     }
+    
+    /**
+     * Poistaa ja palauttaa pakan päällimmäisen kortin.
+     * @return Päällimmäinen kortti.
+     */
     public Kortti removeKortti(){
         return pakka.removeKortti();
     }

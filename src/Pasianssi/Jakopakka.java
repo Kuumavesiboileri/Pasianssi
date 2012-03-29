@@ -27,11 +27,11 @@ public class Jakopakka {
         this.oikeinpain = new PinoFifo();
         this.paallimmaiset = new LinkedList<Kortti>();
     }
-    /**
-     * Palauttaa viimeisessä käännössä käännetyt kortit (listan "päällimmäiset").
-     * Jos tämä lista on tyhjä, palauttaa päällimmäisen oikeinpäin olevan kortin.
+   /**
+     * Palauttaa viimeisessä käännössä käännetyyjen korttien päällimmäisen kortin
+     * Jos tämä viimeisen käännön lista on tyhjä, palauttaa päällimmäisen oikeinpäin olevan kortin.
      * 
-     * @return viimeisessä käännössä käännetyt kortit, tai jos tämä tyhjä niin 
+     * @return viimeisessä käännössä käännetty päällimmäinen kortti, tai
      * ensimmäinen oikeinpäin oleva kortti.
      * 
      */
@@ -46,7 +46,15 @@ public class Jakopakka {
         
         return paallimmaiset.removeLast();
     }
-    public LinkedList<Kortti> getPaallimmaiset(){
+     /**
+     * Palauttaa viimeisessä käännössä käännetyt kortit (listan "päällimmäiset").
+     * Jos tämä lista on tyhjä, palauttaa päällimmäisen oikeinpäin olevan kortin.
+     * 
+     * @return viimeisessä käännössä käännetyt kortit, tai jos tämä tyhjä niin 
+     * ensimmäinen oikeinpäin oleva kortti.
+     * 
+     */
+    public LinkedList<Kortti> removePaallimmaiset(){
         if (paallimmaiset.isEmpty()){
             if(oikeinpain.isEmpty()){
                 return null;

@@ -50,7 +50,7 @@ public class JakopakkaTest {
 
     @Test
     public void eiYhtaanOikeinpainOlevaaKorttiaGetPaallimmaisetNull() {
-        assertEquals(null,pakka.getPaallimmaiset());
+        assertEquals(null,pakka.removePaallimmaiset());
     }
     @Test
     public void removePaallimmainenPalauttaaPaallimmaisenKortinJosTuoOnViimeksiKaannetyissa(){
@@ -70,14 +70,14 @@ public class JakopakkaTest {
     @Test
     public void getPaallimmaisetPalauttaaViimeksiKaannetytKolmeKorttia(){
         pakka.kaannaPaalle();
-        LinkedList<Kortti> paallimmaiset = pakka.getPaallimmaiset();
+        LinkedList<Kortti> paallimmaiset = pakka.removePaallimmaiset();
         assertEquals(11,paallimmaiset.getLast().getArvo());
     }
     @Test
     public void getPaallimmaisetPalauttaaViimeksiKaannetytKaksiKorttiaJosKaannetyistaYksiKaytetty(){
         pakka.kaannaPaalle();
         pakka.removePaallimmainen();
-        LinkedList<Kortti> paallimmaiset = pakka.getPaallimmaiset();
+        LinkedList<Kortti> paallimmaiset = pakka.removePaallimmaiset();
         assertEquals(12, paallimmaiset.getLast().getArvo());
         assertEquals(2, paallimmaiset.size());
         
