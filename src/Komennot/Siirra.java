@@ -9,14 +9,19 @@ import Pasianssi.Korttipakat;
 import java.util.HashMap;
 
 /**
- *
- * @author atte
+ * Pelin siirrä -komento.
+ * @author Adio
  */
 public class Siirra extends Komento{
     
     public Siirra(Korttipakat korttipakat){
         super(korttipakat);
     }
+    /**
+     * Siirtää kortin pakasta toiseen, jos siirto on laillinen. Palauttaa true, jos siirto onnistuu, false jos ei onnistu.
+     * @param syote Komentoparametrit HashMap -muodossa.
+     * @return Onnistuiko siirto.
+     */
     @Override
     public boolean suorita(HashMap<String, String> syote){
         

@@ -6,7 +6,7 @@ import Kortti.Kortti;
 import java.util.LinkedList;
 
 /**
- * Metodi, joka sisältää pelin pakat.
+ * Sisältää pelin pakat.
  * @author Adio
  */
 public class Korttipakat {

@@ -8,8 +8,8 @@ import Pasianssi.Korttipakat;
 import java.util.HashMap;
 
 /**
- *
- * @author atte
+ * Rajapinta pelin komennoille.
+ * @author Adio
  */
 public abstract class Komento {
     protected Korttipakat korttipakat;
