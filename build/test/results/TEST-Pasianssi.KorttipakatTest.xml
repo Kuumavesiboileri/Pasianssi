@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Orion" name="Kortti.ArvoTest" tests="4" time="0.076" timestamp="2012-04-11T18:36:40">
+<testsuite errors="0" failures="0" hostname="Orion" name="Pasianssi.KorttipakatTest" tests="3" time="0.078" timestamp="2012-04-11T18:36:46">
   <properties>
     <property name="default.javac.source" value="1.6" />
     <property name="file.encoding.pkg" value="sun.io" />
@@ -285,10 +285,9 @@
     <property name="sun.arch.data.model" value="32" />
     <property name="mkdist.disabled" value="false" />
   </properties>
-  <testcase classname="Kortti.ArvoTest" name="liianSuuriArvoPaatyyVirheeseen" time="0.006" />
-  <testcase classname="Kortti.ArvoTest" name="liianPieniArvoPaatyyVihreeseen" time="0.001" />
-  <testcase classname="Kortti.ArvoTest" name="arvonLuontiToimiiAnnetuissaRajoissa" time="0.001" />
-  <testcase classname="Kortti.ArvoTest" name="compareToTulosPositiivinen" time="0.0" />
+  <testcase classname="Pasianssi.KorttipakatTest" name="konsturktoriLuoKaikkiMaalipakat" time="0.008" />
+  <testcase classname="Pasianssi.KorttipakatTest" name="konstruktoriLuoKaikkiPelipakatOikein" time="0.0" />
+  <testcase classname="Pasianssi.KorttipakatTest" name="konstruktoriLuoJakopakanOikein" time="0.001" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
