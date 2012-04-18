@@ -6,7 +6,6 @@ package Pasianssi;
 
 import Komennot.*;
 import Kortti.Kortti;
-import java.util.Scanner;
 import java.util.HashMap;
 import java.util.LinkedList;
 /**
@@ -16,13 +15,11 @@ import java.util.LinkedList;
 public class Sovellus {
     UserInterface UI;
     Korttipakat korttipakat;
-    Scanner lukija;
     HashMap<String, Komento> komentoTaulukko;
     
     public Sovellus(UserInterface UI){
         this.UI = UI;
         korttipakat = new Korttipakat();
-        lukija = new Scanner(System.in);
         komentoTaulukko = setKomennot();
     }
     /**
@@ -34,12 +31,25 @@ public class Sovellus {
         HashMap<String,String> komentoTyyppi;
         while(true){
             komentoTyyppi = UI.getKomento();
-            if(komentoTaulukko.get(komentoTyyppi.get("komento")) == null){
-                UI.out("Komentoa ei löydy");
+            if(komentoTyyppi.get("komento").equals("tyhjä"))
+                continue;
+            
+            if(komentoTyyppi.get("komento").equals("virhe")){
+                UI.out("virheellinen komento!");
                 continue;
             }
-            Komento komento = komentoTaulukko.get("komento");
+            if(komentoTyyppi.get("komento").equals("laiton")){
+                UI.out("laiton siirto!");
+                continue;
+            }
+            if(komentoTyyppi.get("komento").equals("uusiPeli")){
+                return;
+            }
+            
+            
+            Komento komento = komentoTaulukko.get(komentoTyyppi.get("komento"));
             komento.suorita(komentoTyyppi);
+            UI.update();
             
         }
         
@@ -54,14 +64,25 @@ public class Sovellus {
     public LinkedList<Kortti> getKuva(String pakkaId, int i){
         return korttipakat.getPakanKuva(pakkaId, i);
     }
+    /**
+     * Kertoo, onko sovelluksen sisältämän Korttipakat -luokan olion jakopakassa väärinpäin olevia kortteja.
+     * @return Onko jakopakassa väärinpäin olevia kortteja.
+     */
     
+    public boolean onkoJakopakassaVaarinpainKortteja(){
+        return korttipakat.onkoJakopakassaVaarinpainKortteja();
+    }
+
     /**
      * Metodi alustaa kaikki pelin komennot private HashMappiin.
      * @return Pelin käyttämät komennot.
      */
     private HashMap<String, Komento> setKomennot(){
         HashMap<String, Komento> palautettava = new HashMap<String, Komento>();
-        palautettava.put("siirra", new Siirra(korttipakat));
+        palautettava.put("siirrä", new Siirra(korttipakat));
+        palautettava.put("siirräMonta", new SiirraMonta(korttipakat));
+        palautettava.put("käännä", new Kaanna(korttipakat));
+        palautettava.put("lopeta", new Lopeta(korttipakat));
         return palautettava;
     }
 }

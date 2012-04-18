@@ -49,8 +49,8 @@ public class JakopakkaTest {
     }
 
     @Test
-    public void eiYhtaanOikeinpainOlevaaKorttiaGetPaallimmaisetNull() {
-        assertEquals(null,pakka.getKuva());
+    public void eiYhtaanOikeinpainOlevaaKorttiaGetKuvaKortinSelkapuoli() {
+        assertEquals(0,pakka.getKuva().getFirst().getArvo());
     }
     @Test
     public void removePaallimmainenPalauttaaPaallimmaisenKortinJosTuoOnViimeksiKaannetyissa(){

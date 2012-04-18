@@ -10,5 +10,5 @@ package Kortti;
  * @see Kortti
  */
 public enum Maa {
-    PATA, HERTTA, RISTI, RUUTU;
+    PATA, HERTTA, RISTI, RUUTU, SELKAPUOLI;
 }

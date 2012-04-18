@@ -17,4 +17,5 @@ public interface PakkaRajapinta {
     public void setKortti(Kortti kortti);
     public boolean voikoLaittaa(Kortti paalle);
     public LinkedList<Kortti> getKuva();
+    public void kaannaPaalle();
 }

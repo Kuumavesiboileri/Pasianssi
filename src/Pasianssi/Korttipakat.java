@@ -81,17 +81,10 @@ public class Korttipakat {
     }
     
     /**
-     * Kääntää Jakopakan päällimmäisen kortin oikeinpäin, jos tämä on väärinpäin
+     * Kääntää pakan päällimmäisen kortin oikeinpäin, jos tämä on väärinpäin
      * @param pakka pakka, josta halutaan kääntää kortti.
      */
-    public void kaanna(Jakopakka pakka){
-        pakka.kaannaPaalle();
-    }
-    /**
-     * Kääntää Pelipakan päällimmäisen kortin oikeinpäin, jos tämä on väärinpäin
-     * @param pakka pakka, josta halutaan kääntää kortti.
-     */
-    public void kaanna(Pelipakka pakka){
+    public void kaanna(PakkaRajapinta pakka){
         pakka.kaannaPaalle();
     }
     
@@ -104,5 +97,8 @@ public class Korttipakat {
     public LinkedList<Kortti> getPakanKuva(String pakkaID, int i){
         PakkaRajapinta pakka = this.getPakka(pakkaID, i);
         return pakka.getKuva();
+    }
+    public boolean onkoJakopakassaVaarinpainKortteja(){
+        return jakopakka.onkoVaarinpain();
     }
 }

@@ -1,8 +1,10 @@
 package Korttipakka;
 
+import Kortti.KortinSelkapuoli;
 import Kortti.PinoFaceUp;
 import Kortti.PinoFifo;
 import Kortti.Kortti;
+import Kortti.Maa;
 import java.util.LinkedList;
 /**
  * Luokalla toteutetaan pasianssin 7 korttipinoa. Sisältää kuvapuoli alaspäin olevan
@@ -159,6 +161,13 @@ public class Pelipakka implements PakkaRajapinta{
      */
     @Override
     public LinkedList getKuva(){
-        return oikeinpain.getKaikki();
+        if(!oikeinpain.isEmpty())
+            return oikeinpain.getKaikki();
+        if(!vaarinpain.isEmpty()){
+            LinkedList<Kortti> palauta = new LinkedList<Kortti>();
+            palauta.add(new KortinSelkapuoli(Maa.SELKAPUOLI, 0));
+            return palauta;
+        }   
+        return new LinkedList<Kortti>();
     }
 }

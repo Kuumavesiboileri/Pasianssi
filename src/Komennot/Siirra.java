@@ -43,7 +43,6 @@ public class Siirra extends Komento{
             return false;
         }
         catch(NumberFormatException e){
-            System.out.println("Virhe");
             return false;
         }
               

@@ -55,4 +55,5 @@ public class Arvo implements Comparable <Arvo> {
         Integer palauta = new Integer(arvo);
         return palauta.toString();
     }
+
 }

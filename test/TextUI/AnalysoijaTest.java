@@ -18,6 +18,7 @@ import static org.junit.Assert.*;
  */
 public class AnalysoijaTest {
     private Analysoija analysoija;
+    private HashMap<String,String> virheellinenSyoteKartta;
     public AnalysoijaTest() {
     }
 
@@ -32,6 +33,8 @@ public class AnalysoijaTest {
     @Before
     public void setUp() {
         analysoija = new Analysoija();
+        virheellinenSyoteKartta = new HashMap<String,String>();
+        virheellinenSyoteKartta.put("komento", "virhe");
     }
     
     @After
@@ -42,7 +45,7 @@ public class AnalysoijaTest {
      * Test of muokkaaHashTaulukoksi method, of class Analysoija.
      */
     @Test
-    public void muokkaaHashTaulukoksiToimiiOikeallaSiirraSyotteela() {
+    public void siirraMuokkaaHashTaulukoksiToimiiOikeallaSiirraSyotteela() {
         String syote = "siirrä jakopakka 1 maalipakka 3";
         //System.out.println(analysoija.muokkaaHashTaulukoksi(syote));
         HashMap<String,String> komennot = analysoija.muokkaaHashTaulukoksi(syote);
@@ -50,39 +53,51 @@ public class AnalysoijaTest {
         assertEquals("jakopakka", komennot.get("mistä"));
     }
     @Test
-    public void muokkaaHashTaulukoksiToimiiOikeallaSiirraMontaSyotteela() {
+    public void siirraMuokkaaHashTaulukoksiToimiiOikeallaSiirraMontaSyotteela() {
         String syote = "siirrä pelipakka 3 pelipakka 2 4";
         HashMap<String,String> komennot = analysoija.muokkaaHashTaulukoksi(syote);
         assertEquals("siirräMonta", komennot.get("komento"));
         assertEquals("pelipakka", komennot.get("mihin"));
-        assertTrue(komennot != null);
+        assertEquals("4" ,komennot.get("montako"));
     }
     @Test
-    public void muokkaaHashTaulukoksiEiToimiJosPakkaJostaSiirretaanVaarin() {
+    public void siirraMuokkaaHashTaulukoksiEiToimiJosPakkaJostaSiirretaanVaarin() {
         String syote = "siirrä peliakka 3 pelipakka 2";
-        assertNull(analysoija.muokkaaHashTaulukoksi(syote));
+        assertEquals(virheellinenSyoteKartta, analysoija.muokkaaHashTaulukoksi(syote));
     }
     @Test
-    public void muokkaaHashTaulukoksiEiToimiJosPakkaJohonSiirretaanVaarin() {
+    public void siirraMuokkaaHashTaulukoksiEiToimiJosPakkaJohonSiirretaanVaarin() {
         String syote = "siirrä pelipakka 3 peliakka 2";
-        assertNull(analysoija.muokkaaHashTaulukoksi(syote));
+        assertEquals(virheellinenSyoteKartta, analysoija.muokkaaHashTaulukoksi(syote));
     }
     
     
     @Test
-    public void muokkaaHashTaulukoksiEiToimiJosPakkastaSiirretaanJarjestysnumeroEiNumero() {
+    public void siirraMuokkaaHashTaulukoksiEiToimiJosPakkastaSiirretaanJarjestysnumeroEiNumero() {
         String syote = "siirrä pelipakka kolme pelipakka 2";
-        assertNull(analysoija.muokkaaHashTaulukoksi(syote));
+        assertEquals(virheellinenSyoteKartta,analysoija.muokkaaHashTaulukoksi(syote));
     }
     
     @Test
-    public void muokkaaHashTaulukoksiEiToimiJosPakkaJohonSiirretaanJarjestysnumeroEiNumero() {
+    public void siirraMuokkaaHashTaulukoksiEiToimiJosPakkaJohonSiirretaanJarjestysnumeroEiNumero() {
         String syote = "siirrä pelipakka 3 pelipakka kaksi";
-        assertNull(analysoija.muokkaaHashTaulukoksi(syote));
+        assertEquals(virheellinenSyoteKartta,analysoija.muokkaaHashTaulukoksi(syote));
     }
     @Test
-    public void muokkaaHashTaulukoksiEiToimiJosKomentoVaarin(){
+    public void siirraMuokkaaHashTaulukoksiEiToimiJosKomentoVaarin(){
         String syote = "siirra pelipakka 3 pelipakka 2";
-        assertNull(analysoija.muokkaaHashTaulukoksi(syote));
+        assertEquals(virheellinenSyoteKartta,analysoija.muokkaaHashTaulukoksi(syote));
+    }
+    @Test
+    public void kaannaMuokkaaHashTaulukoksiToimiiOikeallaSyotteella(){
+        String syote = "käännä pelipakka 3";
+        HashMap<String,String> komennot = analysoija.muokkaaHashTaulukoksi(syote);
+        assertEquals("käännä", komennot.get("komento"));
+    }
+    @Test
+    public void kaannaMuokkaaHashTaulukoksiEiToimiLiianLyhyellaSyotteella(){
+        String syote = "käännä pelipakka";
+        assertEquals(virheellinenSyoteKartta,analysoija.muokkaaHashTaulukoksi(syote));
+        
     }
 }

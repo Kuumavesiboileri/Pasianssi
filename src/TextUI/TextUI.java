@@ -69,6 +69,12 @@ public class TextUI implements UserInterface{
     private void tulostaTilanne(){
         System.out.println("-----------------------------------\n");
         System.out.println("Jakopakka:");
+        
+        if(sovellus.onkoJakopakassaVaarinpainKortteja())
+            System.out.println("[###]");
+        else
+            System.out.println("[null]");
+        
         System.out.println(sovellus.getKuva("jakopakka", 0));
         System.out.println("Maalipakat:");
         for(int i = 0; i < 4; i++)

@@ -76,4 +76,8 @@ public class Maalipakka implements PakkaRajapinta{
         palauta.add(this.getKortti());
         return palauta;
     }
+    @Override
+    public void kaannaPaalle(){
+        return;
+    }
 }

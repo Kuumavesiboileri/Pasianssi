@@ -4,8 +4,10 @@
  */
 package Korttipakka;
 
+import Kortti.KortinSelkapuoli;
 import Kortti.PinoFifo;
 import Kortti.Kortti;
+import Kortti.Maa;
 import java.util.LinkedList;
 
 /**
@@ -75,11 +77,22 @@ public class Jakopakka implements PakkaRajapinta{
      * käännetty kortti on päällimmäisenä!
      */
     public void kaannaPaalle(){
-        while(!paallimmaiset.isEmpty())
-            oikeinpain.setKortti(paallimmaiset.removeFirst());
+        if(vaarinpain.isEmpty())
+            kaannaPakkaYmpari();
         
-        while(paallimmaiset.size() < 3 && !vaarinpain.isEmpty())
-            paallimmaiset.addLast(vaarinpain.removeKortti());
+        else {
+            while(!paallimmaiset.isEmpty())
+                oikeinpain.setKortti(paallimmaiset.removeFirst());
+        
+            while(paallimmaiset.size() < 3 && !vaarinpain.isEmpty())
+                paallimmaiset.addLast(vaarinpain.removeKortti());
+        }
+    }
+    private void kaannaPakkaYmpari(){
+        while(!paallimmaiset.isEmpty())
+                oikeinpain.setKortti(paallimmaiset.removeFirst());
+        while(!oikeinpain.isEmpty())
+            vaarinpain.setKortti(oikeinpain.removeKortti());
     }
     /**
      * Palauttaa aina arvon 'false', sillä jakopakkaan ei voida laittaa mitään.
@@ -109,7 +122,15 @@ public class Jakopakka implements PakkaRajapinta{
     public LinkedList<Kortti> getKuva(){
         if (paallimmaiset.isEmpty()){
             if(oikeinpain.isEmpty()){
-                return null;
+                if(vaarinpain.isEmpty()){
+                    return null;
+                }
+                else {
+                    LinkedList<Kortti> palauta = new LinkedList<Kortti>();
+                    palauta.add(new KortinSelkapuoli(Maa.PATA, 0));
+                    return palauta;
+                }
+                    
             }
             
             LinkedList<Kortti> palauta = new LinkedList<Kortti>();
@@ -119,6 +140,9 @@ public class Jakopakka implements PakkaRajapinta{
         
         return paallimmaiset;
     }
+    public boolean onkoVaarinpain(){
+        return !vaarinpain.isEmpty();
+    }
     /**
      * Palauttaa pakan koon. Sekä oikein-, että väärinpäinkäännetyt.
      * @return Pakan koko.
@@ -126,4 +150,5 @@ public class Jakopakka implements PakkaRajapinta{
     public int size(){
         return vaarinpain.getKoko() + oikeinpain.getKoko() + paallimmaiset.size();
     }
+    
 }

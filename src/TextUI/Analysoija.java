@@ -24,12 +24,38 @@ public class Analysoija {
      */
     public HashMap<String, String> muokkaaHashTaulukoksi(String syote){
         Scanner skanneri = new Scanner(syote);
-        if(!skanneri.hasNext())
-            return null;
+
+        
+        if(!skanneri.hasNext()){
+            HashMap<String,String> palautaVirheelliset = new HashMap<String,String>();
+            palautaVirheelliset.put("komento", "tyhjä");
+            return palautaVirheelliset;
+        }
+        
         String komento = skanneri.next();
-        if(komento.equals("siirrä"))
-            return muokkaaHashTaulukoksiSiirra(skanneri);
-        else return null;
+        
+        if(komento.equals("siirrä")){
+            HashMap<String,String> komentoKartta = muokkaaHashTaulukoksiSiirra(skanneri);
+            if(komentoKartta != null)
+                return komentoKartta;
+        }
+        if(komento.equals("käännä")){
+            HashMap<String,String> komentoKartta = muokkaaHashTaulukoksiKaanna(skanneri);
+            if(komentoKartta != null)
+                return komentoKartta;
+        }
+
+        if(komento.equals("uusiPeli"))
+            return muokkaaHashTaulukoksiUusiPeli();
+        
+        if(komento.equals("lopeta")){
+            return muokkaaHashTaulukoksiLopeta();
+        }
+        
+        
+        HashMap<String,String> palautaVirheelliset = new HashMap<String,String>();
+        palautaVirheelliset.put("komento", "virhe");
+        return palautaVirheelliset;
     }
     /**
      *Yksityinen metodi, joka luo komennolle "siirrä" komentoriviparametrit. 
@@ -37,6 +63,7 @@ public class Analysoija {
      * @return Komento "siirrä" HashMap -muodossa.
      */
     private HashMap<String, String> muokkaaHashTaulukoksiSiirra(Scanner skanneri){
+        
         HashMap<String, String> palautettava = new HashMap<String, String>();
         palautettava.put("komento", "siirrä");
         
@@ -79,6 +106,48 @@ public class Analysoija {
              return palautettava;
          }
          
+    }
+    private HashMap<String,String> muokkaaHashTaulukoksiKaanna(Scanner skanneri){
+        HashMap<String, String> palautettava = new HashMap<String, String>();
+        palautettava.put("komento", "käännä");
+        
+        if(!skanneri.hasNext())
+            return null;
+        String mikaPakka = skanneri.next();
+        if(!onkoPakka(mikaPakka))
+            return null;
+        palautettava.put("pakka", mikaPakka);
+        
+        if(!skanneri.hasNext())
+            return null;
+        
+         String i = skanneri.next();
+         if(!Character.isDigit(i.charAt(0)))
+             return null;
+         palautettava.put("i", i);
+         
+         return palautettava;
+    }
+    
+    /**
+     * Yksityinen metodi, joka luo komennolle "uusiPeli" komentoriviparametrit.
+     * Käytännösä katsoen sisältää siis pelkän komennon "uusiPeli".
+     * @return HashMap, joka sisältää avaimelle "komento" merkkijonon "uusiPeli".
+     */
+    private HashMap<String,String> muokkaaHashTaulukoksiUusiPeli(){
+        HashMap<String,String> palauta = new HashMap<String,String>();
+        palauta.put("komento","uusiPeli");
+        return palauta;
+    }
+    /**
+     * Yksityinen metodi, joka luo komennolle "lopeta" komentoriviparametrit.
+     * Käytännösä katsoen sisältää siis pelkän komennon "lopeta".
+     * @return HashMap, joka sisältää avaimelle "komento" merkkijonon "lopeta".
+     */
+    private HashMap<String,String> muokkaaHashTaulukoksiLopeta(){
+        HashMap<String,String> palauta = new HashMap<String,String>();
+        palauta.put("komento","lopeta");
+        return palauta;
     }
     /**
      * Yksityinen metodi, joka tarkistaa, onko syötteessä annettu pakka oikean muotoinen.
