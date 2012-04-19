@@ -27,6 +27,7 @@ public class TextUI implements UserInterface{
      * Linkittää sovelluksen käyttöliittymään.
      * @param sovellus Varsinainen sovellus.
      */
+    @Override
     public void setSovellus(Sovellus sovellus){
         this.sovellus = sovellus;
     }

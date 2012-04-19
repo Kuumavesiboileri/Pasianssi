@@ -20,7 +20,7 @@ public class Sovellus {
     public Sovellus(UserInterface UI){
         this.UI = UI;
         korttipakat = new Korttipakat();
-        komentoTaulukko = setKomennot();
+        komentoTaulukko = setKomennot();        
     }
     /**
      * Main -metodista suoritettava komento, joka käynnistää pelin. Jatkuu, kunnes käsketään lopettamaan.
@@ -43,7 +43,10 @@ public class Sovellus {
                 continue;
             }
             if(komentoTyyppi.get("komento").equals("uusiPeli")){
-                return;
+                korttipakat = new Korttipakat();
+                komentoTaulukko = setKomennot();
+                UI.update();
+                continue;
             }
             
             
