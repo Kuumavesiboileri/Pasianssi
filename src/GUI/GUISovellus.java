@@ -31,15 +31,21 @@ public class GUISovellus {
     }
     public void alusta(){
         jakopakka = sovellus.getKuva("jakopakka", 0);
+        
         for(int i = 0; i < 7; i++){
             pelipakat.set(i, sovellus.getKuva("pelipakka", i));
         }
         for(int i = 0; i < 4; i++){
             maalipakat.set(i, sovellus.getKuva("maalipakka", i));
         }
+        
     }
     
-    //public ImageIcon getKortinKuva(String korttipaikanNimi){
+    public ImageIcon getKortinKuva(Kortti kortti){
+        return new ImageIcon(getClass().getResource("/GUI/Images/" + kortti.getMaa() + "_" + kortti.getArvo()));
+    }
+/*        PseudoKorttiPakka pakka = new PseudoKorttiPakka(kortinPakanNimi);
+        sovellus.getKuva(pakka.getPakka(), pakka.getJarjestysnumero());
         
-    //}
+    }*/
 }

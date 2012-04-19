@@ -30,76 +30,97 @@ public class GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLayeredPane1 = new javax.swing.JLayeredPane();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLayeredPane2 = new javax.swing.JLayeredPane();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        Jakopakka = new javax.swing.JLayeredPane();
+        jakopakka3 = new javax.swing.JLabel();
+        jakopakka2 = new javax.swing.JLabel();
+        jakopakka1 = new javax.swing.JLabel();
+        jakopakka0 = new javax.swing.JLabel();
+        Maalipakat = new javax.swing.JLayeredPane();
+        Slotti1 = new javax.swing.JLayeredPane();
+        Slotti2 = new javax.swing.JLayeredPane();
+        Slotti3 = new javax.swing.JLayeredPane();
+        Slotti4 = new javax.swing.JLayeredPane();
+        Slotti5 = new javax.swing.JLayeredPane();
+        Slotti6 = new javax.swing.JLayeredPane();
+        Slotti7 = new javax.swing.JLayeredPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/clubs-10-75.png"))); // NOI18N
-        jLabel3.setBounds(130, 0, 75, 107);
-        jLayeredPane1.add(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jakopakka3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/c10.png"))); // NOI18N
+        jakopakka3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jakopakka3.setName("jakopakka 3"); // NOI18N
+        jakopakka3.setBounds(130, 0, 71, 96);
+        Jakopakka.add(jakopakka3, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/clubs-10-75.png"))); // NOI18N
-        jLabel2.setBounds(110, 0, 75, 107);
-        jLayeredPane1.add(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jakopakka2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/c10.png"))); // NOI18N
+        jakopakka2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jakopakka2.setName("jakopakka 2"); // NOI18N
+        jakopakka2.setBounds(110, 0, 71, 96);
+        Jakopakka.add(jakopakka2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/clubs-10-75.png"))); // NOI18N
-        jLabel1.setBounds(90, 0, 75, 107);
-        jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jakopakka1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/c10.png"))); // NOI18N
+        jakopakka1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jakopakka1.setName("jakopakka 1"); // NOI18N
+        jakopakka1.setBounds(90, 0, 71, 96);
+        Jakopakka.add(jakopakka1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/clubs-10-75.png"))); // NOI18N
-        jLabel4.setBounds(0, 0, 75, 107);
-        jLayeredPane1.add(jLabel4, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/clubs-10-75.png"))); // NOI18N
-        jLabel5.setBounds(90, 0, 75, 107);
-        jLayeredPane2.add(jLabel5, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/clubs-10-75.png"))); // NOI18N
-        jLabel6.setBounds(180, 0, 75, 107);
-        jLayeredPane2.add(jLabel6, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/clubs-10-75.png"))); // NOI18N
-        jLabel8.setBounds(0, 0, 75, 107);
-        jLayeredPane2.add(jLabel8, javax.swing.JLayeredPane.DEFAULT_LAYER);
-
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/clubs-10-75.png"))); // NOI18N
-        jLabel7.setBounds(270, 0, 75, 107);
-        jLayeredPane2.add(jLabel7, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jakopakka0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/c10.png"))); // NOI18N
+        jakopakka0.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jakopakka0.setName("jakopakka 0"); // NOI18N
+        jakopakka0.setBounds(0, 0, 71, 96);
+        Jakopakka.add(jakopakka0, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLayeredPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20))
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Jakopakka, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
+                        .addComponent(Maalipakat, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Slotti1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Slotti2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Slotti3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Slotti4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Slotti5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Slotti6, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(Slotti7, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jLayeredPane2, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLayeredPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 107, Short.MAX_VALUE))
-                .addContainerGap(327, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Jakopakka, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Maalipakat, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Slotti3, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Slotti2, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Slotti4, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Slotti5, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Slotti6, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Slotti7, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap(204, Short.MAX_VALUE))
+                    .addComponent(Slotti1, javax.swing.GroupLayout.DEFAULT_SIZE, 493, Short.MAX_VALUE)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
     private void testiMetodi(){
-        jLabel3 = new javax.swing.JLabel();
         
     }
     
@@ -133,21 +154,25 @@ public class GUI extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
 
+            @Override
             public void run() {
                 new GUI().setVisible(true);
             }
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLayeredPane jLayeredPane1;
-    private javax.swing.JLayeredPane jLayeredPane2;
+    private javax.swing.JLayeredPane Jakopakka;
+    private javax.swing.JLayeredPane Maalipakat;
+    private javax.swing.JLayeredPane Slotti1;
+    private javax.swing.JLayeredPane Slotti2;
+    private javax.swing.JLayeredPane Slotti3;
+    private javax.swing.JLayeredPane Slotti4;
+    private javax.swing.JLayeredPane Slotti5;
+    private javax.swing.JLayeredPane Slotti6;
+    private javax.swing.JLayeredPane Slotti7;
+    private javax.swing.JLabel jakopakka0;
+    private javax.swing.JLabel jakopakka1;
+    private javax.swing.JLabel jakopakka2;
+    private javax.swing.JLabel jakopakka3;
     // End of variables declaration//GEN-END:variables
 }

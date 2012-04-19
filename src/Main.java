@@ -1,4 +1,6 @@
 
+import Kortti.Kortti;
+import Kortti.Maa;
 import Pasianssi.Sovellus;
 import Pasianssi.UserInterface;
 import TextUI.TextUI;
