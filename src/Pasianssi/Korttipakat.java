@@ -1,8 +1,8 @@
 
 package Pasianssi;
-import Korttipakka.*;
-import Kortti.PinoFifo;
 import Kortti.Kortti;
+import Kortti.PinoFifo;
+import Korttipakka.*;
 import java.util.LinkedList;
 
 /**
