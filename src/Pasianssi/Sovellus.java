@@ -27,7 +27,7 @@ public class Sovellus {
      */
     public void kaynnista(){
         UI.alusta();
-        
+        /*
         HashMap<String,String> komentoTyyppi;
         while(true){
             komentoTyyppi = UI.getKomento();
@@ -54,7 +54,7 @@ public class Sovellus {
             komento.suorita(komentoTyyppi);
             UI.update();
             
-        }
+        }*/
         
     }
     

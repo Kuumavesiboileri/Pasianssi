@@ -12,11 +12,9 @@ import TextUI.TextUI;
 public class Main {
     
     public static void main(String[] args){
-        while(true){
-            UserInterface UI = new TextUI();
-            Sovellus sovellus = new Sovellus(UI);
-            UI.setSovellus(sovellus);
-            sovellus.kaynnista();
-        }
+        UserInterface UI = new TextUI();
+        Sovellus sovellus = new Sovellus(UI);
+        UI.setSovellus(sovellus);
+        sovellus.kaynnista();
     }
 }

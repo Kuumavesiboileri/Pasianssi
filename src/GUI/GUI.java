@@ -10,6 +10,8 @@
  */
 package GUI;
 
+import javax.swing.JLabel;
+
 /**
  *
  * @author atte
@@ -30,99 +32,331 @@ public class GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        Jakopakka = new javax.swing.JLayeredPane();
-        jakopakka3 = new javax.swing.JLabel();
+        LABEL = new javax.swing.JLabel();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        slotti1 = new javax.swing.JLayeredPane();
+        slotti113 = new javax.swing.JLabel();
+        slotti112 = new javax.swing.JLabel();
+        slotti111 = new javax.swing.JLabel();
+        slotti110 = new javax.swing.JLabel();
+        slotti19 = new javax.swing.JLabel();
+        slotti18 = new javax.swing.JLabel();
+        slotti17 = new javax.swing.JLabel();
+        slotti16 = new javax.swing.JLabel();
+        slotti15 = new javax.swing.JLabel();
+        slotti14 = new javax.swing.JLabel();
+        slotti13 = new javax.swing.JLabel();
+        slotti12 = new javax.swing.JLabel();
+        slotti11 = new javax.swing.JLabel();
+        slotti10 = new javax.swing.JLabel();
+        slotti0 = new javax.swing.JLayeredPane();
+        slotti013 = new javax.swing.JLabel();
+        slotti012 = new javax.swing.JLabel();
+        slotti011 = new javax.swing.JLabel();
+        slotti010 = new javax.swing.JLabel();
+        slotti09 = new javax.swing.JLabel();
+        slotti08 = new javax.swing.JLabel();
+        slotti07 = new javax.swing.JLabel();
+        slotti06 = new javax.swing.JLabel();
+        slotti05 = new javax.swing.JLabel();
+        slotti04 = new javax.swing.JLabel();
+        slotti03 = new javax.swing.JLabel();
+        slotti02 = new javax.swing.JLabel();
+        slotti01 = new javax.swing.JLabel();
+        slotti00 = new javax.swing.JLabel();
+        jakopakka = new javax.swing.JLayeredPane();
+        jakopakka00 = new javax.swing.JLabel();
         jakopakka2 = new javax.swing.JLabel();
         jakopakka1 = new javax.swing.JLabel();
         jakopakka0 = new javax.swing.JLabel();
-        Maalipakat = new javax.swing.JLayeredPane();
-        Slotti1 = new javax.swing.JLayeredPane();
-        Slotti2 = new javax.swing.JLayeredPane();
-        Slotti3 = new javax.swing.JLayeredPane();
-        Slotti4 = new javax.swing.JLayeredPane();
-        Slotti5 = new javax.swing.JLayeredPane();
-        Slotti6 = new javax.swing.JLayeredPane();
-        Slotti7 = new javax.swing.JLayeredPane();
+        maalipakat = new javax.swing.JLayeredPane();
+        maalipakka0 = new javax.swing.JLabel();
+        maalipakka1 = new javax.swing.JLabel();
+        maalipakka2 = new javax.swing.JLabel();
+        maalipakka3 = new javax.swing.JLabel();
+        takaSlotti0 = new javax.swing.JLayeredPane();
+        takaSlotti11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jakopakka3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/c10.png"))); // NOI18N
-        jakopakka3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jakopakka3.setName("jakopakka 3"); // NOI18N
-        jakopakka3.setBounds(130, 0, 71, 96);
-        Jakopakka.add(jakopakka3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        LABEL.setFont(new java.awt.Font("Dialog", 1, 18));
+        LABEL.setText("Tekstiä");
 
-        jakopakka2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/c10.png"))); // NOI18N
+        slotti1.setPreferredSize(new java.awt.Dimension(71, 370));
+
+        slotti113.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti113.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti113.setName("pelipakka 1 13"); // NOI18N
+        slotti113.setBounds(0, 260, 71, 96);
+        slotti1.add(slotti113, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti112.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti112.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti112.setName("pelipakka 1 12"); // NOI18N
+        slotti112.setBounds(0, 240, 71, 96);
+        slotti1.add(slotti112, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti111.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti111.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti111.setName("pelipakka 1 11"); // NOI18N
+        slotti111.setBounds(0, 220, 71, 96);
+        slotti1.add(slotti111, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti110.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti110.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti110.setName("pelipakka 1 10"); // NOI18N
+        slotti110.setBounds(0, 200, 71, 96);
+        slotti1.add(slotti110, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti19.setName("pelipakka 1 9"); // NOI18N
+        slotti19.setBounds(0, 180, 71, 96);
+        slotti1.add(slotti19, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti18.setName("pelipakka 1 8"); // NOI18N
+        slotti18.setBounds(0, 160, 71, 96);
+        slotti1.add(slotti18, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti17.setName("pelipakka 1 7"); // NOI18N
+        slotti17.setBounds(0, 140, 71, 96);
+        slotti1.add(slotti17, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti16.setName("pelipakka 1 6"); // NOI18N
+        slotti16.setBounds(0, 120, 71, 96);
+        slotti1.add(slotti16, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti15.setName("pelipakka 1 5"); // NOI18N
+        slotti15.setBounds(0, 100, 71, 96);
+        slotti1.add(slotti15, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti14.setName("pelipakka 1 4"); // NOI18N
+        slotti14.setBounds(0, 80, 71, 96);
+        slotti1.add(slotti14, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti13.setName("pelipakka 1 3"); // NOI18N
+        slotti13.setBounds(0, 60, 71, 96);
+        slotti1.add(slotti13, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti12.setName("pelipakka 1 2"); // NOI18N
+        slotti12.setBounds(0, 40, 71, 96);
+        slotti1.add(slotti12, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti11.setName("pelipakka 1 1"); // NOI18N
+        slotti11.setBounds(0, 20, 71, 96);
+        slotti1.add(slotti11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti10.setName("pelipakka 1 0"); // NOI18N
+        slotti10.setBounds(0, 0, 71, 96);
+        slotti1.add(slotti10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti1.setBounds(110, 140, 71, 380);
+        jLayeredPane1.add(slotti1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti0.setPreferredSize(new java.awt.Dimension(71, 370));
+
+        slotti013.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti013.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti013.setName("pelipakka 0 13"); // NOI18N
+        slotti013.setBounds(0, 260, 71, 96);
+        slotti0.add(slotti013, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti012.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti012.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti012.setName("pelipakka 0 12"); // NOI18N
+        slotti012.setBounds(0, 240, 71, 96);
+        slotti0.add(slotti012, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti011.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti011.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti011.setName("pelipakka 0 11"); // NOI18N
+        slotti011.setBounds(0, 220, 71, 96);
+        slotti0.add(slotti011, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti010.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti010.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti010.setName("pelipakka 0 10"); // NOI18N
+        slotti010.setBounds(0, 200, 71, 96);
+        slotti0.add(slotti010, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti09.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti09.setName("pelipakka 0 9"); // NOI18N
+        slotti09.setBounds(0, 180, 71, 96);
+        slotti0.add(slotti09, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti08.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti08.setName("pelipakka 0 8"); // NOI18N
+        slotti08.setBounds(0, 160, 71, 96);
+        slotti0.add(slotti08, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti07.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti07.setName("pelipakka 0 7"); // NOI18N
+        slotti07.setBounds(0, 140, 71, 96);
+        slotti0.add(slotti07, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti06.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti06.setName("pelipakka 0 6"); // NOI18N
+        slotti06.setBounds(0, 120, 71, 96);
+        slotti0.add(slotti06, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti05.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti05.setName("pelipakka 0 5"); // NOI18N
+        slotti05.setBounds(0, 100, 71, 96);
+        slotti0.add(slotti05, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti04.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti04.setName("pelipakka 0 4"); // NOI18N
+        slotti04.setBounds(0, 80, 71, 96);
+        slotti0.add(slotti04, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti03.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti03.setName("pelipakka 0 3"); // NOI18N
+        slotti03.setBounds(0, 60, 71, 96);
+        slotti0.add(slotti03, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti02.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti02.setName("pelipakka 0 2"); // NOI18N
+        slotti02.setBounds(0, 40, 71, 96);
+        slotti0.add(slotti02, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti01.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti01.setName("pelipakka 0 1"); // NOI18N
+        slotti01.setBounds(0, 20, 71, 96);
+        slotti0.add(slotti01, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti00.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti00.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti00.setName("pelipakka 0 0"); // NOI18N
+        slotti00.setBounds(0, 0, 71, 96);
+        slotti0.add(slotti00, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti0.setBounds(0, 140, 71, 380);
+        jLayeredPane1.add(slotti0, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jakopakka.setPreferredSize(new java.awt.Dimension(205, 96));
+
+        jakopakka00.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        jakopakka00.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jakopakka00.setBounds(0, 0, 71, 96);
+        jakopakka.add(jakopakka00, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jakopakka2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         jakopakka2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jakopakka2.setName("jakopakka 2"); // NOI18N
-        jakopakka2.setBounds(110, 0, 71, 96);
-        Jakopakka.add(jakopakka2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jakopakka2.setName("jakopakka 0 2"); // NOI18N
+        jakopakka2.setBounds(130, 0, 71, 96);
+        jakopakka.add(jakopakka2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jakopakka1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/c10.png"))); // NOI18N
+        jakopakka1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         jakopakka1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jakopakka1.setName("jakopakka 1"); // NOI18N
-        jakopakka1.setBounds(90, 0, 71, 96);
-        Jakopakka.add(jakopakka1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jakopakka1.setName("jakopakka 0 1"); // NOI18N
+        jakopakka1.setBounds(110, 0, 71, 96);
+        jakopakka.add(jakopakka1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jakopakka0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/c10.png"))); // NOI18N
+        jakopakka0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         jakopakka0.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jakopakka0.setName("jakopakka 0"); // NOI18N
-        jakopakka0.setBounds(0, 0, 71, 96);
-        Jakopakka.add(jakopakka0, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jakopakka0.setName("jakopakka 0 0"); // NOI18N
+        jakopakka0.setBounds(90, 0, 71, 96);
+        jakopakka.add(jakopakka0, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jakopakka.setBounds(0, 0, 205, 96);
+        jLayeredPane1.add(jakopakka, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        maalipakat.setPreferredSize(new java.awt.Dimension(350, 96));
+
+        maalipakka0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        maalipakka0.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        maalipakka0.setName("maalipakka 0 0"); // NOI18N
+        maalipakka0.setBounds(0, 0, 71, 96);
+        maalipakat.add(maalipakka0, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        maalipakka1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        maalipakka1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        maalipakka1.setName("maalipakka 1 0"); // NOI18N
+        maalipakka1.setBounds(90, 0, 71, 96);
+        maalipakat.add(maalipakka1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        maalipakka2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        maalipakka2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        maalipakka2.setName("maalipakka 2 0"); // NOI18N
+        maalipakka2.setBounds(180, 0, 71, 96);
+        maalipakat.add(maalipakka2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        maalipakka3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        maalipakka3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        maalipakka3.setName("maalipakka 0 3"); // NOI18N
+        maalipakka3.setBounds(270, 0, 71, 96);
+        maalipakat.add(maalipakka3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        maalipakat.setBounds(280, 0, 350, 96);
+        jLayeredPane1.add(maalipakat, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaSlotti11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/EMPTYSLOT.png"))); // NOI18N
+        takaSlotti11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaSlotti11.setName("jakopakka 0 0"); // NOI18N
+        takaSlotti11.setBounds(0, 0, 71, 96);
+        takaSlotti0.add(takaSlotti11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaSlotti0.setBounds(0, 140, 70, 100);
+        jLayeredPane1.add(takaSlotti0, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(Jakopakka, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 95, Short.MAX_VALUE)
-                        .addComponent(Maalipakat, javax.swing.GroupLayout.PREFERRED_SIZE, 345, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(Slotti1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(Slotti2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(Slotti3, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(Slotti4, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(Slotti5, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(Slotti6, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(Slotti7, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap())
+            .addGap(0, 643, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(269, 269, 269)
+                    .addComponent(LABEL, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(282, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 631, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Jakopakka, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Maalipakat, javax.swing.GroupLayout.DEFAULT_SIZE, 102, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Slotti3, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Slotti2, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Slotti4, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Slotti5, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Slotti6, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Slotti7, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(204, Short.MAX_VALUE))
-                    .addComponent(Slotti1, javax.swing.GroupLayout.DEFAULT_SIZE, 493, Short.MAX_VALUE)))
+            .addGap(0, 544, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(201, 201, 201)
+                    .addComponent(LABEL, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(278, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 532, Short.MAX_VALUE)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    private void testiMetodi(){
-        
-    }
     
     /**
      * @param args the command line arguments
@@ -157,22 +391,114 @@ public class GUI extends javax.swing.JFrame {
             @Override
             public void run() {
                 new GUI().setVisible(true);
+                
             }
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLayeredPane Jakopakka;
-    private javax.swing.JLayeredPane Maalipakat;
-    private javax.swing.JLayeredPane Slotti1;
-    private javax.swing.JLayeredPane Slotti2;
-    private javax.swing.JLayeredPane Slotti3;
-    private javax.swing.JLayeredPane Slotti4;
-    private javax.swing.JLayeredPane Slotti5;
-    private javax.swing.JLayeredPane Slotti6;
-    private javax.swing.JLayeredPane Slotti7;
+    private javax.swing.JLabel LABEL;
+    private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JLayeredPane jakopakka;
     private javax.swing.JLabel jakopakka0;
+    private javax.swing.JLabel jakopakka00;
     private javax.swing.JLabel jakopakka1;
     private javax.swing.JLabel jakopakka2;
-    private javax.swing.JLabel jakopakka3;
+    private javax.swing.JLayeredPane maalipakat;
+    private javax.swing.JLabel maalipakka0;
+    private javax.swing.JLabel maalipakka1;
+    private javax.swing.JLabel maalipakka2;
+    private javax.swing.JLabel maalipakka3;
+    private javax.swing.JLayeredPane slotti0;
+    private javax.swing.JLabel slotti00;
+    private javax.swing.JLabel slotti01;
+    private javax.swing.JLabel slotti010;
+    private javax.swing.JLabel slotti011;
+    private javax.swing.JLabel slotti012;
+    private javax.swing.JLabel slotti013;
+    private javax.swing.JLabel slotti02;
+    private javax.swing.JLabel slotti03;
+    private javax.swing.JLabel slotti04;
+    private javax.swing.JLabel slotti05;
+    private javax.swing.JLabel slotti06;
+    private javax.swing.JLabel slotti07;
+    private javax.swing.JLabel slotti08;
+    private javax.swing.JLabel slotti09;
+    private javax.swing.JLayeredPane slotti1;
+    private javax.swing.JLabel slotti10;
+    private javax.swing.JLabel slotti11;
+    private javax.swing.JLabel slotti110;
+    private javax.swing.JLabel slotti111;
+    private javax.swing.JLabel slotti112;
+    private javax.swing.JLabel slotti113;
+    private javax.swing.JLabel slotti12;
+    private javax.swing.JLabel slotti13;
+    private javax.swing.JLabel slotti14;
+    private javax.swing.JLabel slotti15;
+    private javax.swing.JLabel slotti16;
+    private javax.swing.JLabel slotti17;
+    private javax.swing.JLabel slotti18;
+    private javax.swing.JLabel slotti19;
+    private javax.swing.JLayeredPane takaSlotti0;
+    private javax.swing.JLabel takaSlotti11;
     // End of variables declaration//GEN-END:variables
+    private GUISovellus guiSovellus;
+    private JLabel aktiivinen;
+    
+    
+    
+    public void paivitaTila(JLabel korttiLabel){
+        if(guiSovellus.onkoKortti(korttiLabel.getName()))
+            korttiLabel.setIcon(guiSovellus.getKortinKuva(korttiLabel.getName()));
+        else
+            korttiLabel.setVisible(false);
+    }
+    
+    public void paivitaTilaBorderilla(JLabel korttiLabel){
+        if(guiSovellus.onkoKortti(korttiLabel.getName()))
+            korttiLabel.setIcon(guiSovellus.getKortinKuva(korttiLabel.getName()));
+        else
+            korttiLabel.setIcon(guiSovellus.getTyhjaKortti());
+        }
+    
+    public void alusta(GUISovellus sovellus){
+        this.guiSovellus = sovellus;
+        aktiivinen = null;
+        
+        if(guiSovellus.onkoJakopakassaVaarinpainKortteja())
+            jakopakka00.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png")));
+        else
+            jakopakka00.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/EMPTYSLOT.png")));
+        
+        
+        LABEL.setText(Integer.valueOf(jakopakka.getComponentCount()).toString());
+        
+        for(int i = jakopakka.getComponentCount() -1; i > 0; i--){
+            javax.swing.JLabel korttiLabel = (javax.swing.JLabel) jakopakka.getComponent(i);
+            paivitaTila(korttiLabel);
+        }
+        for(int i = maalipakat.getComponentCount() -1; i >= 0; i--){
+            javax.swing.JLabel korttiLabel = (javax.swing.JLabel) maalipakat.getComponent(i);
+            paivitaTilaBorderilla(korttiLabel);
+        }
+        for(int i = slotti0.getComponentCount() -1; i >= 0; i--){
+            javax.swing.JLabel korttiLabel = (javax.swing.JLabel) slotti0.getComponent(i);
+
+            paivitaTila(korttiLabel);
+        }
+        for(int i = slotti1.getComponentCount() -1; i >= 0; i--){
+            javax.swing.JLabel korttiLabel = (javax.swing.JLabel) slotti1.getComponent(i);
+
+            paivitaTila(korttiLabel);
+        }
+        //slotti1.setLocation(slotti1.getLocation)
+        //ja jotenkin muokkaat tota pointtia?!
+        
+        /*maalipakka0.setIcon(guiSovellus.getKortinKuva(maalipakka0.getName()));
+        maalipakka1.setIcon(guiSovellus.getKortinKuva(maalipakka1.getName()));
+        maalipakka2.setIcon(guiSovellus.getKortinKuva(maalipakka2.getName()));
+        maalipakka3.setIcon(guiSovellus.getKortinKuva(maalipakka3.getName()));
+        */
+        //slotti0.getComponentCount();   
+        this.setVisible(true);
+    }
 }

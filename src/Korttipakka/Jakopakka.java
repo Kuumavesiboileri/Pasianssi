@@ -122,15 +122,7 @@ public class Jakopakka implements PakkaRajapinta{
     public LinkedList<Kortti> getKuva(){
         if (paallimmaiset.isEmpty()){
             if(oikeinpain.isEmpty()){
-                if(vaarinpain.isEmpty()){
-                    return null;
-                }
-                else {
-                    LinkedList<Kortti> palauta = new LinkedList<Kortti>();
-                    palauta.add(new KortinSelkapuoli(Maa.PATA, 0));
-                    return palauta;
-                }
-                    
+                return new LinkedList<Kortti>();
             }
             
             LinkedList<Kortti> palauta = new LinkedList<Kortti>();

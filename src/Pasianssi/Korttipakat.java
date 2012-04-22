@@ -98,6 +98,7 @@ public class Korttipakat {
         PakkaRajapinta pakka = this.getPakka(pakkaID, i);
         return pakka.getKuva();
     }
+    
     public boolean onkoJakopakassaVaarinpainKortteja(){
         return jakopakka.onkoVaarinpain();
     }

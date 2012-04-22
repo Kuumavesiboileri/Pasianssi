@@ -26,7 +26,7 @@ public class KortinSelkapuoli extends Kortti{
     }
     @Override
     public String getMaa(){
-        return "#";
+        return "BACK";
     }
     
     @Override

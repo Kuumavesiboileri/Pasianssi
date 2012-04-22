@@ -66,6 +66,9 @@ public class Maalipakka implements PakkaRajapinta{
         
         return false;
     }
+    public boolean isEmpty(){
+        return pakka.isEmpty();
+    }
     /**
      * Palauttaa päällimmäisen oikeinpäin olevan kortin laitettuna LinkedListiin.
      * @return Päälimmäinen kortti.
@@ -73,7 +76,8 @@ public class Maalipakka implements PakkaRajapinta{
     @Override
     public LinkedList<Kortti> getKuva(){
         LinkedList<Kortti> palauta = new LinkedList<Kortti>();
-        palauta.add(this.getKortti());
+        if(!this.isEmpty())
+            palauta.add(this.getKortti());
         return palauta;
     }
     @Override
