@@ -13,9 +13,7 @@ import java.util.HashMap;
  */
 public interface UserInterface {
     public void setSovellus(Sovellus sovellus);
-    public HashMap<String, String> getKomento();
     public void out(String line);
+    public void kaynnista();
     
-    public void alusta();
-    public void update();
 }

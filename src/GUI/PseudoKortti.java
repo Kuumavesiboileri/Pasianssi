@@ -20,7 +20,7 @@ public class PseudoKortti {
     public PseudoKortti(String kortinNimi){
         lukija = new Scanner(kortinNimi);
         pakka = lukija.next();
-        pakanJarjestysnumero = Integer.valueOf(lukija.next());
+        pakanJarjestysnumero = Integer.valueOf(lukija.next());        
         kortinJarjestysnumero = Integer.valueOf(lukija.next());
     }
     
@@ -28,10 +28,10 @@ public class PseudoKortti {
         return pakka;
     }
     
-    public int getpakanJarjestysnumero(){
+    public int getPakanJarjestysnumero(){
         return pakanJarjestysnumero;
     }
-    public int getkortinJarjestysnumero(){
+    public int getKortinJarjestysnumero(){
         return kortinJarjestysnumero;
     }
 }

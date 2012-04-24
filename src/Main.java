@@ -1,4 +1,3 @@
-
 import Kortti.Kortti;
 import Kortti.Maa;
 import Pasianssi.Sovellus;
@@ -15,6 +14,6 @@ public class Main {
         UserInterface UI = new TextUI();
         Sovellus sovellus = new Sovellus(UI);
         UI.setSovellus(sovellus);
-        sovellus.kaynnista();
+        UI.kaynnista();
     }
 }

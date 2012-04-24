@@ -22,42 +22,38 @@ public class Sovellus {
         korttipakat = new Korttipakat();
         komentoTaulukko = setKomennot();        
     }
+    public Sovellus(UserInterface UI, boolean totuusarvo){
+        this.UI = UI;
+        korttipakat = new Korttipakat(totuusarvo);
+        komentoTaulukko = setKomennot();        
+    }
+
     /**
-     * Main -metodista suoritettava komento, joka käynnistää pelin. Jatkuu, kunnes käsketään lopettamaan.
+     * Metodi, jolla käyttöliittymä voi "puskea" komentoja itse sovellukselle.
+     * @param komentoTyyppi Komento HasMappinä.
      */
-    public void kaynnista(){
-        UI.alusta();
-        /*
-        HashMap<String,String> komentoTyyppi;
-        while(true){
-            komentoTyyppi = UI.getKomento();
-            if(komentoTyyppi.get("komento").equals("tyhjä"))
-                continue;
-            
-            if(komentoTyyppi.get("komento").equals("virhe")){
-                UI.out("virheellinen komento!");
-                continue;
+    public void pushKomento(HashMap<String,String> komentoTyyppi){
+        
+        if(komentoTyyppi.get("komento").equals("tyhjä"))
+            return;
+
+        if(komentoTyyppi.get("komento").equals("virhe")){
+            UI.out("virheellinen komento!");
+            return;
             }
-            if(komentoTyyppi.get("komento").equals("laiton")){
-                UI.out("laiton siirto!");
-                continue;
-            }
-            if(komentoTyyppi.get("komento").equals("uusiPeli")){
-                korttipakat = new Korttipakat();
-                komentoTaulukko = setKomennot();
-                UI.update();
-                continue;
-            }
-            
-            
-            Komento komento = komentoTaulukko.get(komentoTyyppi.get("komento"));
-            komento.suorita(komentoTyyppi);
-            UI.update();
-            
-        }*/
+
+        if(komentoTyyppi.get("komento").equals("laiton")){
+            UI.out("laiton siirto!");
+            return;
+        }
+        if(komentoTyyppi.get("komento").equals("uusiPeli")){
+            korttipakat = new Korttipakat();
+            return;
+        }
+        Komento komento = komentoTaulukko.get(komentoTyyppi.get("komento"));
+        komento.suorita(komentoTyyppi);
         
     }
-    
     /**
      * Hakee halutun pakan "kuvan". Eli halutun pakan oikeinpäin käännetyt kortit LinkedListinä.
      * @param pakkaId Halutun pakan tyyppi Stringinä.

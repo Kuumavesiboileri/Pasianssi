@@ -24,6 +24,18 @@ public class TextUI implements UserInterface{
         analysoija = new Analysoija();
     }
     /**
+     * Käynnistää sovelluksen, jokna jälkeen 
+     * käyttöliittymä alkaa "puskemaan" komentoja itse sovellukselle.
+     */
+    @Override
+    public void kaynnista(){
+        alusta();
+        while(true){
+            sovellus.pushKomento(getKomento());
+            update();
+        }
+    }
+    /**
      * Linkittää sovelluksen käyttöliittymään.
      * @param sovellus Varsinainen sovellus.
      */
@@ -31,15 +43,7 @@ public class TextUI implements UserInterface{
     public void setSovellus(Sovellus sovellus){
         this.sovellus = sovellus;
     }
-    /**
-     * Palauttaa käyttäjän antaman komennon HashMap<String,String> -muodossa.
-     * @return Käyttäjän antama komento.
-     */
-    @Override
-    public HashMap<String,String> getKomento(){
-        String syote = lukija.getSyote();
-        return analysoija.muokkaaHashTaulukoksi(syote);
-    }
+    
     /**
      * Tulostaa syötteen näytölle.
      * @param line Tulostettava syöte.
@@ -48,19 +52,29 @@ public class TextUI implements UserInterface{
     public void out(String line){
         System.out.println(line);
     }
+    
+    /**
+     * Palauttaa käyttäjän antaman komennon HashMap<String,String> -muodossa.
+     * @return Käyttäjän antama komento.
+     */
+    private HashMap<String,String> getKomento(){
+        String syote = lukija.getSyote();
+        return analysoija.muokkaaHashTaulukoksi(syote);
+    }
+    
     /**
      * Metodi ohjeiden yms tulostamiseen. Tarkoitettu suoritettavaksi ennen pelin alkua.
      */
-    @Override
-    public void alusta(){
+
+    private void alusta(){
         System.out.println("Tervetuloa pelaamaan pasianssia");
         tulostaTilanne();
     }
     /**
      * Päivittää pelitilanteen. Tässä tapauksessa tulostaa nykyisen tilanteen tekstimuodossa.
      */
-    @Override
-    public void update(){
+    
+    private void update(){
         tulostaTilanne();    
     }
     

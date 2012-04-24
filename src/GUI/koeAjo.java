@@ -15,10 +15,9 @@ public class koeAjo {
     
     public static void main(String[] args){
         UserInterface gui = new GUISovellus();
-        Sovellus sovellus = new Sovellus(gui);
+        Sovellus sovellus = new Sovellus(gui, true);
         gui.setSovellus(sovellus);
-        sovellus.kaynnista();
-        
+        gui.kaynnista();   
     }
     
 }

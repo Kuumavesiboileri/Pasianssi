@@ -5,6 +5,8 @@ import Kortti.PinoFifo;
 import Kortti.Kortti;
 import java.util.LinkedList;
 
+
+import Kortti.Maa;
 /**
  * Sisältää pelin pakat.
  * @author Adio
@@ -37,6 +39,33 @@ public class Korttipakat {
             maalipakka[i] = new Maalipakka();
         jakopakka = new Jakopakka(alkupakka.getPakka());
     }
+    public Korttipakat(boolean totuusarvo){
+        Alkupakka alkupakka = new Alkupakka();
+        
+        pelipakka= new Pelipakka[7];
+        maalipakka = new Maalipakka[4];
+        
+        for(int i = 0; i < 7 ; i++){
+            
+            PinoFifo alapakka = new PinoFifo();
+            for(int j = 0; j < i; j++){
+                alapakka.setKortti(alkupakka.removeKortti());
+            }
+            pelipakka[i] = new Pelipakka(alapakka);
+            if(i == 1)
+                pelipakka[i].setKortti(new Kortti(Maa.HERTTA, 12));
+            else
+                if(i==2)
+                    pelipakka[i].setKortti(new Kortti(Maa.PATA, 11));
+                else 
+                    pelipakka[i].setKortti(alkupakka.removeKortti());
+        }
+        
+        for(int i = 0; i < 4; i++)
+            maalipakka[i] = new Maalipakka();
+        jakopakka = new Jakopakka(alkupakka.getPakka());
+    }
+    
     /**
      * Palauttaa vittauksen haluttuun pelin pakkaan.
      * @param pakka Halutun pakan tyyppi Stringinä.

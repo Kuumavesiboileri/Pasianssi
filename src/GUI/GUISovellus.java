@@ -33,12 +33,10 @@ public class GUISovellus implements UserInterface{
         maalipakat = new ArrayList<LinkedList<Kortti>>(4);
         pakassaKortteja = new int[7];
     }
+    
     @Override
     public void setSovellus(Sovellus sovellus){
         this.sovellus = sovellus;
-    }
-    @Override
-    public void alusta(){
         
         jakopakka = sovellus.getKuva("jakopakka", 0);
         
@@ -52,28 +50,48 @@ public class GUISovellus implements UserInterface{
         gui.alusta(this);
         
     }
+    
+    public void pushKomento (HashMap<String,String> komento){
+        sovellus.pushKomento(komento);
+        if(komento.containsValue("siirrä") || komento.containsValue("siirräMonta"))
+            paivitaPelipakat();
+        
+    }
+    
     public boolean onkoKortti(String kortinNimi){
         PseudoKortti kortinPaikka = new PseudoKortti(kortinNimi);
         LinkedList<Kortti> kasiteltavaPakka;
         
         if (kortinPaikka.getPakka().equals("jakopakka")){
-            if(jakopakka.isEmpty())
+            if(jakopakka.size() <= kortinPaikka.getKortinJarjestysnumero())
                 return false;
         }
         if(kortinPaikka.getPakka().equals("maalipakka")){
-            kasiteltavaPakka = maalipakat.get(kortinPaikka.getpakanJarjestysnumero());
+            kasiteltavaPakka = maalipakat.get(kortinPaikka.getPakanJarjestysnumero());
             if(kasiteltavaPakka.isEmpty())
                 return false;
         }
         if(kortinPaikka.getPakka().equals("pelipakka")){
-            kasiteltavaPakka = pelipakat.get(kortinPaikka.getpakanJarjestysnumero());
+            kasiteltavaPakka = pelipakat.get(kortinPaikka.getPakanJarjestysnumero());
             if(kasiteltavaPakka.isEmpty())
                 return false;
-            if(kortinPaikka.getkortinJarjestysnumero() >= kasiteltavaPakka.size())
+            if(kortinPaikka.getKortinJarjestysnumero() >= kasiteltavaPakka.size())
                 return false;
         }
         return true;
     }
+    
+    public boolean onkoPelipakanPaallimmainen(String kortinNimi){
+        PseudoKortti kortinPaikka = new PseudoKortti(kortinNimi);
+        if(kortinPaikka.getKortinJarjestysnumero() == pakassaKortteja[kortinPaikka.getPakanJarjestysnumero()] -1)
+            return true;
+        return false;
+    }
+    public int montaPelipakassaPaalla(String kortinNimi){
+        PseudoKortti kortinPaikka = new PseudoKortti(kortinNimi);
+        return pakassaKortteja[kortinPaikka.getPakanJarjestysnumero()] -1 - kortinPaikka.getKortinJarjestysnumero();
+    }
+    
     // LAITA HEITTÄMÄÄN JOKU VIRHE!!!
     public ImageIcon getKortinKuva(String kortinNimi){
         Kortti kortti = null;
@@ -81,14 +99,14 @@ public class GUISovellus implements UserInterface{
         
         PseudoKortti kortinPaikka = new PseudoKortti(kortinNimi);
         if (kortinPaikka.getPakka().equals("jakopakka")){
-            kortti = jakopakka.get(kortinPaikka.getkortinJarjestysnumero());
+            kortti = jakopakka.get(kortinPaikka.getKortinJarjestysnumero());
         }
         if(kortinPaikka.getPakka().equals("maalipakka")){
-            kasiteltavaPakka = maalipakat.get(kortinPaikka.getpakanJarjestysnumero());
-            kortti = kasiteltavaPakka.get(kortinPaikka.getkortinJarjestysnumero());
+            kasiteltavaPakka = maalipakat.get(kortinPaikka.getPakanJarjestysnumero());
+            kortti = kasiteltavaPakka.get(kortinPaikka.getKortinJarjestysnumero());
         }
         if(kortinPaikka.getPakka().equals("pelipakka"))
-            kortti = pelipakat.get(kortinPaikka.getpakanJarjestysnumero()).get(kortinPaikka.getkortinJarjestysnumero());
+            kortti = pelipakat.get(kortinPaikka.getPakanJarjestysnumero()).get(kortinPaikka.getKortinJarjestysnumero());
             return kortinKuva(kortti);
     }
     
@@ -99,32 +117,23 @@ public class GUISovellus implements UserInterface{
     public boolean onkoJakopakassaVaarinpainKortteja(){
         return sovellus.onkoJakopakassaVaarinpainKortteja();
     }
+    
+    private void paivitaPelipakat(){
+        for(int i = 0; i < 7; i++){
+            pakassaKortteja[i] = pelipakat.get(i).size();   
+        }
+    }
     private ImageIcon kortinKuva(Kortti kortti){
         String osoite = "/GUI/Images/" + kortti.getMaa() + "_" + kortti.getArvo() + ".png";
         return new ImageIcon(getClass().getResource(osoite));
-    }
+    }    
     
-    /*
-    private ImageIcon tyhjaa(){
-        return new ImageIcon(getClass().getResource("/GUI/Images/BLANK.png"));
-    }*/
-/*        PseudoKorttiPakka pakka = new PseudoKorttiPakka(kortinPakanNimi);
-        sovellus.getKuva(pakka.getPakka(), pakka.getJarjestysnumero());
-        
-    }*/
-
-    @Override
-    public HashMap<String, String> getKomento() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
     @Override
     public void out(String line) {
-        throw new UnsupportedOperationException("Not supported yet.");
+    //Tännepä ei tulekaan mitään xD
     }
 
     @Override
-    public void update() {
-        throw new UnsupportedOperationException("Not supported yet.");
+    public void kaynnista() {
     }
 }
