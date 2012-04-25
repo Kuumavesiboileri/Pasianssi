@@ -52,13 +52,19 @@ public class Korttipakat {
                 alapakka.setKortti(alkupakka.removeKortti());
             }
             pelipakka[i] = new Pelipakka(alapakka);
-            if(i == 1)
+            if(i== 0)
                 pelipakka[i].setKortti(new Kortti(Maa.HERTTA, 12));
-            else
-                if(i==2)
-                    pelipakka[i].setKortti(new Kortti(Maa.PATA, 11));
-                else 
-                    pelipakka[i].setKortti(alkupakka.removeKortti());
+                else
+                if(i == 1)
+                pelipakka[i].setKortti(new Kortti(Maa.RISTI, 13));
+                else
+                    if(i==2)
+                        pelipakka[i].setKortti(new Kortti(Maa.PATA, 11));
+                    else 
+                        if(i==3)
+                            pelipakka[i].setKortti(new Kortti(Maa.HERTTA, 1));
+                        else
+                            pelipakka[i].setKortti(alkupakka.removeKortti());
         }
         
         for(int i = 0; i < 4; i++)

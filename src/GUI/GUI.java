@@ -34,8 +34,67 @@ public class GUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        LABEL = new javax.swing.JLabel();
         jLayeredPane1 = new javax.swing.JLayeredPane();
+        slotti6 = new javax.swing.JLayeredPane();
+        slotti613 = new javax.swing.JLabel();
+        slotti612 = new javax.swing.JLabel();
+        slotti611 = new javax.swing.JLabel();
+        slotti610 = new javax.swing.JLabel();
+        slotti69 = new javax.swing.JLabel();
+        slotti68 = new javax.swing.JLabel();
+        slotti67 = new javax.swing.JLabel();
+        slotti66 = new javax.swing.JLabel();
+        slotti65 = new javax.swing.JLabel();
+        slotti64 = new javax.swing.JLabel();
+        slotti63 = new javax.swing.JLabel();
+        slotti62 = new javax.swing.JLabel();
+        slotti61 = new javax.swing.JLabel();
+        slotti60 = new javax.swing.JLabel();
+        slotti5 = new javax.swing.JLayeredPane();
+        slotti513 = new javax.swing.JLabel();
+        slotti512 = new javax.swing.JLabel();
+        slotti511 = new javax.swing.JLabel();
+        slotti510 = new javax.swing.JLabel();
+        slotti59 = new javax.swing.JLabel();
+        slotti58 = new javax.swing.JLabel();
+        slotti57 = new javax.swing.JLabel();
+        slotti56 = new javax.swing.JLabel();
+        slotti55 = new javax.swing.JLabel();
+        slotti54 = new javax.swing.JLabel();
+        slotti53 = new javax.swing.JLabel();
+        slotti52 = new javax.swing.JLabel();
+        slotti51 = new javax.swing.JLabel();
+        slotti50 = new javax.swing.JLabel();
+        slotti4 = new javax.swing.JLayeredPane();
+        slotti413 = new javax.swing.JLabel();
+        slotti412 = new javax.swing.JLabel();
+        slotti411 = new javax.swing.JLabel();
+        slotti410 = new javax.swing.JLabel();
+        slotti49 = new javax.swing.JLabel();
+        slotti48 = new javax.swing.JLabel();
+        slotti47 = new javax.swing.JLabel();
+        slotti46 = new javax.swing.JLabel();
+        slotti45 = new javax.swing.JLabel();
+        slotti44 = new javax.swing.JLabel();
+        slotti43 = new javax.swing.JLabel();
+        slotti42 = new javax.swing.JLabel();
+        slotti41 = new javax.swing.JLabel();
+        slotti40 = new javax.swing.JLabel();
+        slotti3 = new javax.swing.JLayeredPane();
+        slotti313 = new javax.swing.JLabel();
+        slotti312 = new javax.swing.JLabel();
+        slotti311 = new javax.swing.JLabel();
+        slotti310 = new javax.swing.JLabel();
+        slotti39 = new javax.swing.JLabel();
+        slotti38 = new javax.swing.JLabel();
+        slotti37 = new javax.swing.JLabel();
+        slotti36 = new javax.swing.JLabel();
+        slotti35 = new javax.swing.JLabel();
+        slotti34 = new javax.swing.JLabel();
+        slotti33 = new javax.swing.JLabel();
+        slotti32 = new javax.swing.JLabel();
+        slotti31 = new javax.swing.JLabel();
+        slotti30 = new javax.swing.JLabel();
         slotti2 = new javax.swing.JLayeredPane();
         slotti213 = new javax.swing.JLabel();
         slotti212 = new javax.swing.JLabel();
@@ -91,91 +150,801 @@ public class GUI extends javax.swing.JFrame {
         maalipakka1 = new javax.swing.JLabel();
         maalipakka2 = new javax.swing.JLabel();
         maalipakka3 = new javax.swing.JLabel();
+        takaSlotti6 = new javax.swing.JLayeredPane();
+        takaSlotti60 = new javax.swing.JLabel();
+        takaSlotti5 = new javax.swing.JLayeredPane();
+        takaSlotti50 = new javax.swing.JLabel();
+        takaSlotti4 = new javax.swing.JLayeredPane();
+        takaSlotti40 = new javax.swing.JLabel();
+        takaSlotti3 = new javax.swing.JLayeredPane();
+        takaSlotti30 = new javax.swing.JLabel();
+        takaSlotti2 = new javax.swing.JLayeredPane();
+        takaSlotti20 = new javax.swing.JLabel();
+        takaSlotti1 = new javax.swing.JLayeredPane();
+        takaSlotti10 = new javax.swing.JLabel();
         takaSlotti0 = new javax.swing.JLayeredPane();
-        takaSlotti11 = new javax.swing.JLabel();
+        takaSlotti00 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        LABEL.setFont(new java.awt.Font("Dialog", 1, 18));
-        LABEL.setText("Tekstiä");
+        slotti6.setPreferredSize(new java.awt.Dimension(71, 370));
+
+        slotti613.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti613.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti613.setName("pelipakka 5 13"); // NOI18N
+        slotti613.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti613MouseClicked(evt);
+            }
+        });
+        slotti613.setBounds(0, 260, 71, 96);
+        slotti6.add(slotti613, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti612.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti612.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti612.setName("pelipakka 6 12"); // NOI18N
+        slotti612.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti612MouseClicked(evt);
+            }
+        });
+        slotti612.setBounds(0, 240, 71, 96);
+        slotti6.add(slotti612, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti611.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti611.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti611.setName("pelipakka 6 11"); // NOI18N
+        slotti611.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti611MouseClicked(evt);
+            }
+        });
+        slotti611.setBounds(0, 220, 71, 96);
+        slotti6.add(slotti611, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti610.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti610.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti610.setName("pelipakka 6 10"); // NOI18N
+        slotti610.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti610MouseClicked(evt);
+            }
+        });
+        slotti610.setBounds(0, 200, 71, 96);
+        slotti6.add(slotti610, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti69.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti69.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti69.setName("pelipakka 6 9"); // NOI18N
+        slotti69.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti69MouseClicked(evt);
+            }
+        });
+        slotti69.setBounds(0, 180, 71, 96);
+        slotti6.add(slotti69, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti68.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti68.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti68.setName("pelipakka 6 8"); // NOI18N
+        slotti68.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti68MouseClicked(evt);
+            }
+        });
+        slotti68.setBounds(0, 160, 71, 96);
+        slotti6.add(slotti68, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti67.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti67.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti67.setName("pelipakka 6 7"); // NOI18N
+        slotti67.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti67MouseClicked(evt);
+            }
+        });
+        slotti67.setBounds(0, 140, 71, 96);
+        slotti6.add(slotti67, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti66.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti66.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti66.setName("pelipakka 6 6"); // NOI18N
+        slotti66.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti66MouseClicked(evt);
+            }
+        });
+        slotti66.setBounds(0, 120, 71, 96);
+        slotti6.add(slotti66, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti65.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti65.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti65.setName("pelipakka 6 5"); // NOI18N
+        slotti65.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti65MouseClicked(evt);
+            }
+        });
+        slotti65.setBounds(0, 100, 71, 96);
+        slotti6.add(slotti65, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti64.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti64.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti64.setName("pelipakka 6 4"); // NOI18N
+        slotti64.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti64MouseClicked(evt);
+            }
+        });
+        slotti64.setBounds(0, 80, 71, 96);
+        slotti6.add(slotti64, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti63.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti63.setName("pelipakka 6 3"); // NOI18N
+        slotti63.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti63MouseClicked(evt);
+            }
+        });
+        slotti63.setBounds(0, 60, 71, 96);
+        slotti6.add(slotti63, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti62.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti62.setName("pelipakka 6 2"); // NOI18N
+        slotti62.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti62MouseClicked(evt);
+            }
+        });
+        slotti62.setBounds(0, 40, 71, 96);
+        slotti6.add(slotti62, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti61.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti61.setName("pelipakka 6 1"); // NOI18N
+        slotti61.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti61MouseClicked(evt);
+            }
+        });
+        slotti61.setBounds(0, 20, 71, 96);
+        slotti6.add(slotti61, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti60.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti60.setName("pelipakka 6 0"); // NOI18N
+        slotti60.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti60MouseClicked(evt);
+            }
+        });
+        slotti60.setBounds(0, 0, 71, 96);
+        slotti6.add(slotti60, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti6.setBounds(540, 140, 71, 380);
+        jLayeredPane1.add(slotti6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti5.setPreferredSize(new java.awt.Dimension(71, 370));
+
+        slotti513.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti513.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti513.setName("pelipakka 5 13"); // NOI18N
+        slotti513.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti513MouseClicked(evt);
+            }
+        });
+        slotti513.setBounds(0, 260, 71, 96);
+        slotti5.add(slotti513, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti512.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti512.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti512.setName("pelipakka 5 12"); // NOI18N
+        slotti512.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti512MouseClicked(evt);
+            }
+        });
+        slotti512.setBounds(0, 240, 71, 96);
+        slotti5.add(slotti512, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti511.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti511.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti511.setName("pelipakka 5 11"); // NOI18N
+        slotti511.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti511MouseClicked(evt);
+            }
+        });
+        slotti511.setBounds(0, 220, 71, 96);
+        slotti5.add(slotti511, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti510.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti510.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti510.setName("pelipakka 5 10"); // NOI18N
+        slotti510.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti510MouseClicked(evt);
+            }
+        });
+        slotti510.setBounds(0, 200, 71, 96);
+        slotti5.add(slotti510, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti59.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti59.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti59.setName("pelipakka 5 9"); // NOI18N
+        slotti59.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti59MouseClicked(evt);
+            }
+        });
+        slotti59.setBounds(0, 180, 71, 96);
+        slotti5.add(slotti59, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti58.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti58.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti58.setName("pelipakka 5 8"); // NOI18N
+        slotti58.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti58MouseClicked(evt);
+            }
+        });
+        slotti58.setBounds(0, 160, 71, 96);
+        slotti5.add(slotti58, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti57.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti57.setName("pelipakka 5 7"); // NOI18N
+        slotti57.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti57MouseClicked(evt);
+            }
+        });
+        slotti57.setBounds(0, 140, 71, 96);
+        slotti5.add(slotti57, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti56.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti56.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti56.setName("pelipakka 5 6"); // NOI18N
+        slotti56.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti56MouseClicked(evt);
+            }
+        });
+        slotti56.setBounds(0, 120, 71, 96);
+        slotti5.add(slotti56, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti55.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti55.setName("pelipakka 5 5"); // NOI18N
+        slotti55.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti55MouseClicked(evt);
+            }
+        });
+        slotti55.setBounds(0, 100, 71, 96);
+        slotti5.add(slotti55, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti54.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti54.setName("pelipakka 5 4"); // NOI18N
+        slotti54.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti54MouseClicked(evt);
+            }
+        });
+        slotti54.setBounds(0, 80, 71, 96);
+        slotti5.add(slotti54, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti53.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti53.setName("pelipakka 5 3"); // NOI18N
+        slotti53.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti53MouseClicked(evt);
+            }
+        });
+        slotti53.setBounds(0, 60, 71, 96);
+        slotti5.add(slotti53, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti52.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti52.setName("pelipakka 5 2"); // NOI18N
+        slotti52.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti52MouseClicked(evt);
+            }
+        });
+        slotti52.setBounds(0, 40, 71, 96);
+        slotti5.add(slotti52, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti51.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti51.setName("pelipakka 5 1"); // NOI18N
+        slotti51.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti51MouseClicked(evt);
+            }
+        });
+        slotti51.setBounds(0, 20, 71, 96);
+        slotti5.add(slotti51, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti50.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti50.setName("pelipakka 5 0"); // NOI18N
+        slotti50.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti50MouseClicked(evt);
+            }
+        });
+        slotti50.setBounds(0, 0, 71, 96);
+        slotti5.add(slotti50, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti5.setBounds(450, 140, 71, 380);
+        jLayeredPane1.add(slotti5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti4.setPreferredSize(new java.awt.Dimension(71, 370));
+
+        slotti413.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti413.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti413.setName("pelipakka 4 13"); // NOI18N
+        slotti413.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti413MouseClicked(evt);
+            }
+        });
+        slotti413.setBounds(0, 260, 71, 96);
+        slotti4.add(slotti413, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti412.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti412.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti412.setName("pelipakka 4 12"); // NOI18N
+        slotti412.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti412MouseClicked(evt);
+            }
+        });
+        slotti412.setBounds(0, 240, 71, 96);
+        slotti4.add(slotti412, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti411.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti411.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti411.setName("pelipakka 4 11"); // NOI18N
+        slotti411.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti411MouseClicked(evt);
+            }
+        });
+        slotti411.setBounds(0, 220, 71, 96);
+        slotti4.add(slotti411, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti410.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti410.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti410.setName("pelipakka 4 10"); // NOI18N
+        slotti410.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti410MouseClicked(evt);
+            }
+        });
+        slotti410.setBounds(0, 200, 71, 96);
+        slotti4.add(slotti410, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti49.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti49.setName("pelipakka 4 9"); // NOI18N
+        slotti49.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti49MouseClicked(evt);
+            }
+        });
+        slotti49.setBounds(0, 180, 71, 96);
+        slotti4.add(slotti49, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti48.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti48.setName("pelipakka 4 8"); // NOI18N
+        slotti48.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti48MouseClicked(evt);
+            }
+        });
+        slotti48.setBounds(0, 160, 71, 96);
+        slotti4.add(slotti48, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti47.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti47.setName("pelipakka 4 7"); // NOI18N
+        slotti47.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti47MouseClicked(evt);
+            }
+        });
+        slotti47.setBounds(0, 140, 71, 96);
+        slotti4.add(slotti47, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti46.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti46.setName("pelipakka 4 6"); // NOI18N
+        slotti46.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti46MouseClicked(evt);
+            }
+        });
+        slotti46.setBounds(0, 120, 71, 96);
+        slotti4.add(slotti46, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti45.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti45.setName("pelipakka 4 5"); // NOI18N
+        slotti45.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti45MouseClicked(evt);
+            }
+        });
+        slotti45.setBounds(0, 100, 71, 96);
+        slotti4.add(slotti45, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti44.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti44.setName("pelipakka 4 4"); // NOI18N
+        slotti44.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti44MouseClicked(evt);
+            }
+        });
+        slotti44.setBounds(0, 80, 71, 96);
+        slotti4.add(slotti44, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti43.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti43.setName("pelipakka 4 3"); // NOI18N
+        slotti43.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti43MouseClicked(evt);
+            }
+        });
+        slotti43.setBounds(0, 60, 71, 96);
+        slotti4.add(slotti43, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti42.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti42.setName("pelipakka 4 2"); // NOI18N
+        slotti42.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti42MouseClicked(evt);
+            }
+        });
+        slotti42.setBounds(0, 40, 71, 96);
+        slotti4.add(slotti42, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti41.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti41.setName("pelipakka 4 1"); // NOI18N
+        slotti41.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti41MouseClicked(evt);
+            }
+        });
+        slotti41.setBounds(0, 20, 71, 96);
+        slotti4.add(slotti41, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti40.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti40.setName("pelipakka 4 0"); // NOI18N
+        slotti40.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti40MouseClicked(evt);
+            }
+        });
+        slotti40.setBounds(0, 0, 71, 96);
+        slotti4.add(slotti40, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti4.setBounds(360, 140, 71, 380);
+        jLayeredPane1.add(slotti4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti3.setPreferredSize(new java.awt.Dimension(71, 370));
+
+        slotti313.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti313.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti313.setName("pelipakka 3 13"); // NOI18N
+        slotti313.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti313MouseClicked(evt);
+            }
+        });
+        slotti313.setBounds(0, 260, 71, 96);
+        slotti3.add(slotti313, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti312.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti312.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti312.setName("pelipakka 3 12"); // NOI18N
+        slotti312.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti312MouseClicked(evt);
+            }
+        });
+        slotti312.setBounds(0, 240, 71, 96);
+        slotti3.add(slotti312, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti311.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti311.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti311.setName("pelipakka 3 11"); // NOI18N
+        slotti311.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti311MouseClicked(evt);
+            }
+        });
+        slotti311.setBounds(0, 220, 71, 96);
+        slotti3.add(slotti311, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti310.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti310.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti310.setName("pelipakka 3 10"); // NOI18N
+        slotti310.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti310MouseClicked(evt);
+            }
+        });
+        slotti310.setBounds(0, 200, 71, 96);
+        slotti3.add(slotti310, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti39.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti39.setName("pelipakka 3 9"); // NOI18N
+        slotti39.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti39MouseClicked(evt);
+            }
+        });
+        slotti39.setBounds(0, 180, 71, 96);
+        slotti3.add(slotti39, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti38.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti38.setName("pelipakka 3 8"); // NOI18N
+        slotti38.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti38MouseClicked(evt);
+            }
+        });
+        slotti38.setBounds(0, 160, 71, 96);
+        slotti3.add(slotti38, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti37.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti37.setName("pelipakka 3 7"); // NOI18N
+        slotti37.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti37MouseClicked(evt);
+            }
+        });
+        slotti37.setBounds(0, 140, 71, 96);
+        slotti3.add(slotti37, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti36.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti36.setName("pelipakka 3 6"); // NOI18N
+        slotti36.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti36MouseClicked(evt);
+            }
+        });
+        slotti36.setBounds(0, 120, 71, 96);
+        slotti3.add(slotti36, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti35.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti35.setName("pelipakka 3 5"); // NOI18N
+        slotti35.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti35MouseClicked(evt);
+            }
+        });
+        slotti35.setBounds(0, 100, 71, 96);
+        slotti3.add(slotti35, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti34.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti34.setName("pelipakka 3 4"); // NOI18N
+        slotti34.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti34MouseClicked(evt);
+            }
+        });
+        slotti34.setBounds(0, 80, 71, 96);
+        slotti3.add(slotti34, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti33.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti33.setName("pelipakka 3 3"); // NOI18N
+        slotti33.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti33MouseClicked(evt);
+            }
+        });
+        slotti33.setBounds(0, 60, 71, 96);
+        slotti3.add(slotti33, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti32.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti32.setName("pelipakka 3 2"); // NOI18N
+        slotti32.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti32MouseClicked(evt);
+            }
+        });
+        slotti32.setBounds(0, 40, 71, 96);
+        slotti3.add(slotti32, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti31.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti31.setName("pelipakka 3 1"); // NOI18N
+        slotti31.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti31MouseClicked(evt);
+            }
+        });
+        slotti31.setBounds(0, 20, 71, 96);
+        slotti3.add(slotti31, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
+        slotti30.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        slotti30.setName("pelipakka 3 0"); // NOI18N
+        slotti30.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti30MouseClicked(evt);
+            }
+        });
+        slotti30.setBounds(0, 0, 71, 96);
+        slotti3.add(slotti30, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        slotti3.setBounds(270, 140, 71, 380);
+        jLayeredPane1.add(slotti3, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti2.setPreferredSize(new java.awt.Dimension(71, 370));
 
         slotti213.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti213.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti213.setName("pelipakka 2 13"); // NOI18N
+        slotti213.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti213MouseClicked(evt);
+            }
+        });
         slotti213.setBounds(0, 260, 71, 96);
         slotti2.add(slotti213, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti212.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti212.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti212.setName("pelipakka 2 12"); // NOI18N
+        slotti212.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti212MouseClicked(evt);
+            }
+        });
         slotti212.setBounds(0, 240, 71, 96);
         slotti2.add(slotti212, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti211.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti211.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti211.setName("pelipakka 2 11"); // NOI18N
+        slotti211.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti211MouseClicked(evt);
+            }
+        });
         slotti211.setBounds(0, 220, 71, 96);
         slotti2.add(slotti211, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti210.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti210.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti210.setName("pelipakka 2 10"); // NOI18N
+        slotti210.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti210MouseClicked(evt);
+            }
+        });
         slotti210.setBounds(0, 200, 71, 96);
         slotti2.add(slotti210, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti29.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti29.setName("pelipakka 2 9"); // NOI18N
+        slotti29.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti29MouseClicked(evt);
+            }
+        });
         slotti29.setBounds(0, 180, 71, 96);
         slotti2.add(slotti29, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti28.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti28.setName("pelipakka 2 8"); // NOI18N
+        slotti28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti28MouseClicked(evt);
+            }
+        });
         slotti28.setBounds(0, 160, 71, 96);
         slotti2.add(slotti28, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti27.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti27.setName("pelipakka 2 7"); // NOI18N
+        slotti27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti27MouseClicked(evt);
+            }
+        });
         slotti27.setBounds(0, 140, 71, 96);
         slotti2.add(slotti27, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti26.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti26.setName("pelipakka 2 6"); // NOI18N
+        slotti26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti26MouseClicked(evt);
+            }
+        });
         slotti26.setBounds(0, 120, 71, 96);
         slotti2.add(slotti26, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti25.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti25.setName("pelipakka 2 5"); // NOI18N
+        slotti25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti25MouseClicked(evt);
+            }
+        });
         slotti25.setBounds(0, 100, 71, 96);
         slotti2.add(slotti25, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti24.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti24.setName("pelipakka 2 4"); // NOI18N
+        slotti24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti24MouseClicked(evt);
+            }
+        });
         slotti24.setBounds(0, 80, 71, 96);
         slotti2.add(slotti24, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti23.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti23.setName("pelipakka 2 3"); // NOI18N
+        slotti23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti23MouseClicked(evt);
+            }
+        });
         slotti23.setBounds(0, 60, 71, 96);
         slotti2.add(slotti23, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti22.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti22.setName("pelipakka 2 2"); // NOI18N
+        slotti22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti22MouseClicked(evt);
+            }
+        });
         slotti22.setBounds(0, 40, 71, 96);
         slotti2.add(slotti22, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti21.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti21.setName("pelipakka 2 1"); // NOI18N
+        slotti21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti21MouseClicked(evt);
+            }
+        });
         slotti21.setBounds(0, 20, 71, 96);
         slotti2.add(slotti21, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -190,7 +959,7 @@ public class GUI extends javax.swing.JFrame {
         slotti20.setBounds(0, 0, 71, 96);
         slotti2.add(slotti20, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        slotti2.setBounds(210, 140, 71, 380);
+        slotti2.setBounds(180, 140, 71, 380);
         jLayeredPane1.add(slotti2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti1.setPreferredSize(new java.awt.Dimension(71, 370));
@@ -198,72 +967,132 @@ public class GUI extends javax.swing.JFrame {
         slotti113.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti113.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti113.setName("pelipakka 1 13"); // NOI18N
+        slotti113.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti113MouseClicked(evt);
+            }
+        });
         slotti113.setBounds(0, 260, 71, 96);
         slotti1.add(slotti113, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti112.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti112.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti112.setName("pelipakka 1 12"); // NOI18N
+        slotti112.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti112MouseClicked(evt);
+            }
+        });
         slotti112.setBounds(0, 240, 71, 96);
         slotti1.add(slotti112, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti111.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti111.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti111.setName("pelipakka 1 11"); // NOI18N
+        slotti111.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti111MouseClicked(evt);
+            }
+        });
         slotti111.setBounds(0, 220, 71, 96);
         slotti1.add(slotti111, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti110.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti110.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti110.setName("pelipakka 1 10"); // NOI18N
+        slotti110.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti110MouseClicked(evt);
+            }
+        });
         slotti110.setBounds(0, 200, 71, 96);
         slotti1.add(slotti110, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti19.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti19.setName("pelipakka 1 9"); // NOI18N
+        slotti19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti19MouseClicked(evt);
+            }
+        });
         slotti19.setBounds(0, 180, 71, 96);
         slotti1.add(slotti19, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti18.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti18.setName("pelipakka 1 8"); // NOI18N
+        slotti18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti18MouseClicked(evt);
+            }
+        });
         slotti18.setBounds(0, 160, 71, 96);
         slotti1.add(slotti18, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti17.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti17.setName("pelipakka 1 7"); // NOI18N
+        slotti17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti17MouseClicked(evt);
+            }
+        });
         slotti17.setBounds(0, 140, 71, 96);
         slotti1.add(slotti17, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti16.setName("pelipakka 1 6"); // NOI18N
+        slotti16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti16MouseClicked(evt);
+            }
+        });
         slotti16.setBounds(0, 120, 71, 96);
         slotti1.add(slotti16, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti15.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti15.setName("pelipakka 1 5"); // NOI18N
+        slotti15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti15MouseClicked(evt);
+            }
+        });
         slotti15.setBounds(0, 100, 71, 96);
         slotti1.add(slotti15, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti14.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti14.setName("pelipakka 1 4"); // NOI18N
+        slotti14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti14MouseClicked(evt);
+            }
+        });
         slotti14.setBounds(0, 80, 71, 96);
         slotti1.add(slotti14, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti13.setName("pelipakka 1 3"); // NOI18N
+        slotti13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti13MouseClicked(evt);
+            }
+        });
         slotti13.setBounds(0, 60, 71, 96);
         slotti1.add(slotti13, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti12.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti12.setName("pelipakka 1 2"); // NOI18N
+        slotti12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti12MouseClicked(evt);
+            }
+        });
         slotti12.setBounds(0, 40, 71, 96);
         slotti1.add(slotti12, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -289,7 +1118,7 @@ public class GUI extends javax.swing.JFrame {
         slotti10.setBounds(0, 0, 71, 96);
         slotti1.add(slotti10, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        slotti1.setBounds(100, 140, 71, 380);
+        slotti1.setBounds(90, 140, 71, 380);
         jLayeredPane1.add(slotti1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti0.setPreferredSize(new java.awt.Dimension(71, 370));
@@ -297,78 +1126,143 @@ public class GUI extends javax.swing.JFrame {
         slotti013.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti013.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti013.setName("pelipakka 0 13"); // NOI18N
+        slotti013.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti013MouseClicked(evt);
+            }
+        });
         slotti013.setBounds(0, 260, 71, 96);
         slotti0.add(slotti013, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti012.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti012.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti012.setName("pelipakka 0 12"); // NOI18N
+        slotti012.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti012MouseClicked(evt);
+            }
+        });
         slotti012.setBounds(0, 240, 71, 96);
         slotti0.add(slotti012, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti011.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti011.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti011.setName("pelipakka 0 11"); // NOI18N
+        slotti011.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti011MouseClicked(evt);
+            }
+        });
         slotti011.setBounds(0, 220, 71, 96);
         slotti0.add(slotti011, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti010.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti010.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti010.setName("pelipakka 0 10"); // NOI18N
+        slotti010.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti010MouseClicked(evt);
+            }
+        });
         slotti010.setBounds(0, 200, 71, 96);
         slotti0.add(slotti010, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti09.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti09.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti09.setName("pelipakka 0 9"); // NOI18N
+        slotti09.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti09MouseClicked(evt);
+            }
+        });
         slotti09.setBounds(0, 180, 71, 96);
         slotti0.add(slotti09, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti08.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti08.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti08.setName("pelipakka 0 8"); // NOI18N
+        slotti08.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti08MouseClicked(evt);
+            }
+        });
         slotti08.setBounds(0, 160, 71, 96);
         slotti0.add(slotti08, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti07.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti07.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti07.setName("pelipakka 0 7"); // NOI18N
+        slotti07.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti07MouseClicked(evt);
+            }
+        });
         slotti07.setBounds(0, 140, 71, 96);
         slotti0.add(slotti07, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti06.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti06.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti06.setName("pelipakka 0 6"); // NOI18N
+        slotti06.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti06MouseClicked(evt);
+            }
+        });
         slotti06.setBounds(0, 120, 71, 96);
         slotti0.add(slotti06, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti05.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti05.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti05.setName("pelipakka 0 5"); // NOI18N
+        slotti05.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti05MouseClicked(evt);
+            }
+        });
         slotti05.setBounds(0, 100, 71, 96);
         slotti0.add(slotti05, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti04.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti04.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti04.setName("pelipakka 0 4"); // NOI18N
+        slotti04.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti04MouseClicked(evt);
+            }
+        });
         slotti04.setBounds(0, 80, 71, 96);
         slotti0.add(slotti04, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti03.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti03.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti03.setName("pelipakka 0 3"); // NOI18N
+        slotti03.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti03MouseClicked(evt);
+            }
+        });
         slotti03.setBounds(0, 60, 71, 96);
         slotti0.add(slotti03, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti02.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti02.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti02.setName("pelipakka 0 2"); // NOI18N
+        slotti02.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti02MouseClicked(evt);
+            }
+        });
         slotti02.setBounds(0, 40, 71, 96);
         slotti0.add(slotti02, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti01.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         slotti01.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         slotti01.setName("pelipakka 0 1"); // NOI18N
+        slotti01.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                slotti01MouseClicked(evt);
+            }
+        });
         slotti01.setBounds(0, 20, 71, 96);
         slotti0.add(slotti01, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -391,24 +1285,45 @@ public class GUI extends javax.swing.JFrame {
 
         jakopakka00.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         jakopakka00.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jakopakka00.setName("jakopakka 0 0"); // NOI18N
+        jakopakka00.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jakopakka00MouseClicked(evt);
+            }
+        });
         jakopakka00.setBounds(0, 0, 71, 96);
         jakopakka.add(jakopakka00, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jakopakka2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         jakopakka2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jakopakka2.setName("jakopakka 0 2"); // NOI18N
+        jakopakka2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jakopakka2MouseClicked(evt);
+            }
+        });
         jakopakka2.setBounds(130, 0, 71, 96);
         jakopakka.add(jakopakka2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jakopakka1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         jakopakka1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jakopakka1.setName("jakopakka 0 1"); // NOI18N
+        jakopakka1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jakopakka1MouseClicked(evt);
+            }
+        });
         jakopakka1.setBounds(110, 0, 71, 96);
         jakopakka.add(jakopakka1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         jakopakka0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         jakopakka0.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jakopakka0.setName("jakopakka 0 0"); // NOI18N
+        jakopakka0.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jakopakka0MouseClicked(evt);
+            }
+        });
         jakopakka0.setBounds(90, 0, 71, 96);
         jakopakka.add(jakopakka0, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -420,35 +1335,154 @@ public class GUI extends javax.swing.JFrame {
         maalipakka0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         maalipakka0.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         maalipakka0.setName("maalipakka 0 0"); // NOI18N
+        maalipakka0.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                maalipakka0MouseClicked(evt);
+            }
+        });
         maalipakka0.setBounds(0, 0, 71, 96);
         maalipakat.add(maalipakka0, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         maalipakka1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         maalipakka1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         maalipakka1.setName("maalipakka 1 0"); // NOI18N
+        maalipakka1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                maalipakka1MouseClicked(evt);
+            }
+        });
         maalipakka1.setBounds(90, 0, 71, 96);
         maalipakat.add(maalipakka1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         maalipakka2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         maalipakka2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         maalipakka2.setName("maalipakka 2 0"); // NOI18N
+        maalipakka2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                maalipakka2MouseClicked(evt);
+            }
+        });
         maalipakka2.setBounds(180, 0, 71, 96);
         maalipakat.add(maalipakka2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         maalipakka3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/B.png"))); // NOI18N
         maalipakka3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        maalipakka3.setName("maalipakka 0 3"); // NOI18N
+        maalipakka3.setName("maalipakka 3 0"); // NOI18N
+        maalipakka3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                maalipakka3MouseClicked(evt);
+            }
+        });
         maalipakka3.setBounds(270, 0, 71, 96);
         maalipakat.add(maalipakka3, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         maalipakat.setBounds(280, 0, 350, 96);
         jLayeredPane1.add(maalipakat, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        takaSlotti11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/EMPTYSLOT.png"))); // NOI18N
-        takaSlotti11.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        takaSlotti11.setName("jakopakka 0 0"); // NOI18N
-        takaSlotti11.setBounds(0, 0, 71, 96);
-        takaSlotti0.add(takaSlotti11, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        takaSlotti60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/EMPTYSLOT.png"))); // NOI18N
+        takaSlotti60.setLabelFor(slotti0);
+        takaSlotti60.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaSlotti60.setName("pelipakka 6 0"); // NOI18N
+        takaSlotti60.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                takaSlotti60MouseClicked(evt);
+            }
+        });
+        takaSlotti60.setBounds(0, 0, 71, 96);
+        takaSlotti6.add(takaSlotti60, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaSlotti6.setBounds(540, 140, 70, 100);
+        jLayeredPane1.add(takaSlotti6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaSlotti50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/EMPTYSLOT.png"))); // NOI18N
+        takaSlotti50.setLabelFor(slotti0);
+        takaSlotti50.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaSlotti50.setName("pelipakka 5 0"); // NOI18N
+        takaSlotti50.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                takaSlotti50MouseClicked(evt);
+            }
+        });
+        takaSlotti50.setBounds(0, 0, 71, 96);
+        takaSlotti5.add(takaSlotti50, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaSlotti5.setBounds(450, 140, 70, 100);
+        jLayeredPane1.add(takaSlotti5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaSlotti40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/EMPTYSLOT.png"))); // NOI18N
+        takaSlotti40.setLabelFor(slotti0);
+        takaSlotti40.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaSlotti40.setName("pelipakka 4 0"); // NOI18N
+        takaSlotti40.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                takaSlotti40MouseClicked(evt);
+            }
+        });
+        takaSlotti40.setBounds(0, 0, 71, 96);
+        takaSlotti4.add(takaSlotti40, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaSlotti4.setBounds(360, 140, 70, 100);
+        jLayeredPane1.add(takaSlotti4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaSlotti30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/EMPTYSLOT.png"))); // NOI18N
+        takaSlotti30.setLabelFor(slotti0);
+        takaSlotti30.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaSlotti30.setName("pelipakka 3 0"); // NOI18N
+        takaSlotti30.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                takaSlotti30MouseClicked(evt);
+            }
+        });
+        takaSlotti30.setBounds(0, 0, 71, 96);
+        takaSlotti3.add(takaSlotti30, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaSlotti3.setBounds(270, 140, 70, 100);
+        jLayeredPane1.add(takaSlotti3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaSlotti20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/EMPTYSLOT.png"))); // NOI18N
+        takaSlotti20.setLabelFor(slotti0);
+        takaSlotti20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaSlotti20.setName("pelipakka 2 0"); // NOI18N
+        takaSlotti20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                takaSlotti20MouseClicked(evt);
+            }
+        });
+        takaSlotti20.setBounds(0, 0, 71, 96);
+        takaSlotti2.add(takaSlotti20, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaSlotti2.setBounds(180, 140, 70, 100);
+        jLayeredPane1.add(takaSlotti2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaSlotti10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/EMPTYSLOT.png"))); // NOI18N
+        takaSlotti10.setLabelFor(slotti0);
+        takaSlotti10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaSlotti10.setName("pelipakka 1 0"); // NOI18N
+        takaSlotti10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                takaSlotti10MouseClicked(evt);
+            }
+        });
+        takaSlotti10.setBounds(0, 0, 71, 96);
+        takaSlotti1.add(takaSlotti10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaSlotti1.setBounds(90, 140, 70, 100);
+        jLayeredPane1.add(takaSlotti1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaSlotti0.setMaximumSize(new java.awt.Dimension(72, 96));
+        takaSlotti0.setMinimumSize(new java.awt.Dimension(72, 96));
+
+        takaSlotti00.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/EMPTYSLOT.png"))); // NOI18N
+        takaSlotti00.setLabelFor(slotti0);
+        takaSlotti00.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaSlotti00.setName("pelipakka 0 0"); // NOI18N
+        takaSlotti00.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                takaSlotti00MouseClicked(evt);
+            }
+        });
+        takaSlotti00.setBounds(0, 0, 71, 96);
+        takaSlotti0.add(takaSlotti00, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         takaSlotti0.setBounds(0, 140, 70, 100);
         jLayeredPane1.add(takaSlotti0, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -459,11 +1493,6 @@ public class GUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 643, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(269, 269, 269)
-                    .addComponent(LABEL, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(91, Short.MAX_VALUE)))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 631, Short.MAX_VALUE)))
@@ -471,11 +1500,6 @@ public class GUI extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 544, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(201, 201, 201)
-                    .addComponent(LABEL, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(286, Short.MAX_VALUE)))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                     .addContainerGap()
@@ -486,20 +1510,463 @@ public class GUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void slotti00MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti00MouseClicked
-        klikattuSiirraPelipakasta(slotti00);
+        klikattuPelipakkaa(slotti00);
     }//GEN-LAST:event_slotti00MouseClicked
 
+    private void slotti01MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti01MouseClicked
+        klikattuPelipakkaa(slotti01);
+    }//GEN-LAST:event_slotti01MouseClicked
+
+    private void slotti02MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti02MouseClicked
+        klikattuPelipakkaa(slotti02);
+    }//GEN-LAST:event_slotti02MouseClicked
+
+    private void slotti03MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti03MouseClicked
+        klikattuPelipakkaa(slotti03);
+    }//GEN-LAST:event_slotti03MouseClicked
+
+    private void slotti04MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti04MouseClicked
+        klikattuPelipakkaa(slotti04);
+    }//GEN-LAST:event_slotti04MouseClicked
+
+    private void slotti05MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti05MouseClicked
+        klikattuPelipakkaa(slotti05);
+    }//GEN-LAST:event_slotti05MouseClicked
+
+    private void slotti06MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti06MouseClicked
+        klikattuPelipakkaa(slotti06);
+    }//GEN-LAST:event_slotti06MouseClicked
+
+    private void slotti07MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti07MouseClicked
+        klikattuPelipakkaa(slotti07);
+    }//GEN-LAST:event_slotti07MouseClicked
+
+    private void slotti08MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti08MouseClicked
+        klikattuPelipakkaa(slotti08);
+    }//GEN-LAST:event_slotti08MouseClicked
+
+    private void slotti09MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti09MouseClicked
+        klikattuPelipakkaa(slotti09);
+    }//GEN-LAST:event_slotti09MouseClicked
+
+    private void slotti010MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti010MouseClicked
+        klikattuPelipakkaa(slotti010);
+    }//GEN-LAST:event_slotti010MouseClicked
+
+    private void slotti011MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti011MouseClicked
+        klikattuPelipakkaa(slotti011);
+    }//GEN-LAST:event_slotti011MouseClicked
+
+    private void slotti012MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti012MouseClicked
+        klikattuPelipakkaa(slotti012);
+    }//GEN-LAST:event_slotti012MouseClicked
+
+    private void slotti013MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti013MouseClicked
+        klikattuPelipakkaa(slotti013);
+    }//GEN-LAST:event_slotti013MouseClicked
+
     private void slotti10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti10MouseClicked
-        klikattuSiirraPelipakasta(slotti10);
+        klikattuPelipakkaa(slotti10);
     }//GEN-LAST:event_slotti10MouseClicked
 
+    private void slotti11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti11MouseClicked
+        klikattuPelipakkaa(slotti11);
+    }//GEN-LAST:event_slotti11MouseClicked
+
+    private void slotti12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti12MouseClicked
+        klikattuPelipakkaa(slotti12);
+    }//GEN-LAST:event_slotti12MouseClicked
+
+    private void slotti13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti13MouseClicked
+        klikattuPelipakkaa(slotti13);
+    }//GEN-LAST:event_slotti13MouseClicked
+
+    private void slotti14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti14MouseClicked
+        klikattuPelipakkaa(slotti14);
+    }//GEN-LAST:event_slotti14MouseClicked
+
+    private void slotti15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti15MouseClicked
+        klikattuPelipakkaa(slotti15);
+    }//GEN-LAST:event_slotti15MouseClicked
+
+    private void slotti16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti16MouseClicked
+        klikattuPelipakkaa(slotti16);
+    }//GEN-LAST:event_slotti16MouseClicked
+
+    private void slotti17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti17MouseClicked
+        klikattuPelipakkaa(slotti17);
+    }//GEN-LAST:event_slotti17MouseClicked
+
+    private void slotti18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti18MouseClicked
+        klikattuPelipakkaa(slotti18);
+    }//GEN-LAST:event_slotti18MouseClicked
+
+    private void slotti19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti19MouseClicked
+        klikattuPelipakkaa(slotti19);
+    }//GEN-LAST:event_slotti19MouseClicked
+
+    private void slotti110MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti110MouseClicked
+        klikattuPelipakkaa(slotti110);
+    }//GEN-LAST:event_slotti110MouseClicked
+
+    private void slotti111MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti111MouseClicked
+        klikattuPelipakkaa(slotti111);
+    }//GEN-LAST:event_slotti111MouseClicked
+
+    private void slotti112MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti112MouseClicked
+        klikattuPelipakkaa(slotti112);
+    }//GEN-LAST:event_slotti112MouseClicked
+
+    private void slotti113MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti113MouseClicked
+        klikattuPelipakkaa(slotti113);
+    }//GEN-LAST:event_slotti113MouseClicked
+
     private void slotti20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti20MouseClicked
-        klikattuSiirraPelipakasta(slotti20);
+        klikattuPelipakkaa(slotti20);
     }//GEN-LAST:event_slotti20MouseClicked
 
-    private void slotti11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti11MouseClicked
-        klikattuSiirraPelipakasta(slotti11);
-    }//GEN-LAST:event_slotti11MouseClicked
+    private void slotti21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti21MouseClicked
+        klikattuPelipakkaa(slotti21);
+    }//GEN-LAST:event_slotti21MouseClicked
+
+    private void slotti22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti22MouseClicked
+        klikattuPelipakkaa(slotti22);
+    }//GEN-LAST:event_slotti22MouseClicked
+
+    private void slotti23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti23MouseClicked
+        klikattuPelipakkaa(slotti23);
+    }//GEN-LAST:event_slotti23MouseClicked
+
+    private void slotti24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti24MouseClicked
+        klikattuPelipakkaa(slotti24);
+    }//GEN-LAST:event_slotti24MouseClicked
+
+    private void slotti25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti25MouseClicked
+        klikattuPelipakkaa(slotti25);
+    }//GEN-LAST:event_slotti25MouseClicked
+
+    private void slotti26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti26MouseClicked
+        klikattuPelipakkaa(slotti26);
+    }//GEN-LAST:event_slotti26MouseClicked
+
+    private void slotti27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti27MouseClicked
+        klikattuPelipakkaa(slotti27);
+    }//GEN-LAST:event_slotti27MouseClicked
+
+    private void slotti28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti28MouseClicked
+        klikattuPelipakkaa(slotti28);
+    }//GEN-LAST:event_slotti28MouseClicked
+
+    private void slotti29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti29MouseClicked
+        klikattuPelipakkaa(slotti29);
+    }//GEN-LAST:event_slotti29MouseClicked
+
+    private void slotti210MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti210MouseClicked
+        klikattuPelipakkaa(slotti210);
+    }//GEN-LAST:event_slotti210MouseClicked
+
+    private void slotti211MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti211MouseClicked
+        klikattuPelipakkaa(slotti211);
+    }//GEN-LAST:event_slotti211MouseClicked
+
+    private void slotti212MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti212MouseClicked
+        klikattuPelipakkaa(slotti212);
+    }//GEN-LAST:event_slotti212MouseClicked
+
+    private void slotti213MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti213MouseClicked
+        klikattuPelipakkaa(slotti213);
+    }//GEN-LAST:event_slotti213MouseClicked
+
+    private void slotti313MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti313MouseClicked
+        klikattuPelipakkaa(slotti313);
+    }//GEN-LAST:event_slotti313MouseClicked
+
+    private void slotti312MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti312MouseClicked
+        klikattuPelipakkaa(slotti312);
+    }//GEN-LAST:event_slotti312MouseClicked
+
+    private void slotti311MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti311MouseClicked
+        klikattuPelipakkaa(slotti311);
+    }//GEN-LAST:event_slotti311MouseClicked
+
+    private void slotti310MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti310MouseClicked
+        klikattuPelipakkaa(slotti310);
+    }//GEN-LAST:event_slotti310MouseClicked
+
+    private void slotti39MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti39MouseClicked
+        klikattuPelipakkaa(slotti39);
+    }//GEN-LAST:event_slotti39MouseClicked
+
+    private void slotti38MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti38MouseClicked
+        klikattuPelipakkaa(slotti38);
+    }//GEN-LAST:event_slotti38MouseClicked
+
+    private void slotti37MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti37MouseClicked
+        klikattuPelipakkaa(slotti37);
+    }//GEN-LAST:event_slotti37MouseClicked
+
+    private void slotti36MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti36MouseClicked
+        klikattuPelipakkaa(slotti36);
+    }//GEN-LAST:event_slotti36MouseClicked
+
+    private void slotti35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti35MouseClicked
+        klikattuPelipakkaa(slotti35);
+    }//GEN-LAST:event_slotti35MouseClicked
+
+    private void slotti34MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti34MouseClicked
+        klikattuPelipakkaa(slotti34);
+    }//GEN-LAST:event_slotti34MouseClicked
+
+    private void slotti33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti33MouseClicked
+        klikattuPelipakkaa(slotti33);
+    }//GEN-LAST:event_slotti33MouseClicked
+
+    private void slotti32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti32MouseClicked
+        klikattuPelipakkaa(slotti32);
+    }//GEN-LAST:event_slotti32MouseClicked
+
+    private void slotti31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti31MouseClicked
+        klikattuPelipakkaa(slotti31);
+    }//GEN-LAST:event_slotti31MouseClicked
+
+    private void slotti30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti30MouseClicked
+        klikattuPelipakkaa(slotti30);
+    }//GEN-LAST:event_slotti30MouseClicked
+
+    private void slotti413MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti413MouseClicked
+        klikattuPelipakkaa(slotti413);
+    }//GEN-LAST:event_slotti413MouseClicked
+
+    private void slotti412MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti412MouseClicked
+        klikattuPelipakkaa(slotti412);
+    }//GEN-LAST:event_slotti412MouseClicked
+
+    private void slotti411MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti411MouseClicked
+        klikattuPelipakkaa(slotti411);
+    }//GEN-LAST:event_slotti411MouseClicked
+
+    private void slotti410MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti410MouseClicked
+        klikattuPelipakkaa(slotti410);
+    }//GEN-LAST:event_slotti410MouseClicked
+
+    private void slotti49MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti49MouseClicked
+        klikattuPelipakkaa(slotti49);
+    }//GEN-LAST:event_slotti49MouseClicked
+
+    private void slotti48MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti48MouseClicked
+        klikattuPelipakkaa(slotti48);
+    }//GEN-LAST:event_slotti48MouseClicked
+
+    private void slotti47MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti47MouseClicked
+        klikattuPelipakkaa(slotti47);
+    }//GEN-LAST:event_slotti47MouseClicked
+
+    private void slotti46MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti46MouseClicked
+        klikattuPelipakkaa(slotti46);
+    }//GEN-LAST:event_slotti46MouseClicked
+
+    private void slotti45MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti45MouseClicked
+        klikattuPelipakkaa(slotti45);
+    }//GEN-LAST:event_slotti45MouseClicked
+
+    private void slotti44MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti44MouseClicked
+        klikattuPelipakkaa(slotti44);
+    }//GEN-LAST:event_slotti44MouseClicked
+
+    private void slotti43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti43MouseClicked
+        klikattuPelipakkaa(slotti43);
+    }//GEN-LAST:event_slotti43MouseClicked
+
+    private void slotti42MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti42MouseClicked
+        klikattuPelipakkaa(slotti42);
+    }//GEN-LAST:event_slotti42MouseClicked
+
+    private void slotti41MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti41MouseClicked
+        klikattuPelipakkaa(slotti41);
+    }//GEN-LAST:event_slotti41MouseClicked
+
+    private void slotti40MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti40MouseClicked
+        klikattuPelipakkaa(slotti40);
+    }//GEN-LAST:event_slotti40MouseClicked
+
+    private void slotti513MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti513MouseClicked
+        klikattuPelipakkaa(slotti513);
+    }//GEN-LAST:event_slotti513MouseClicked
+
+    private void slotti512MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti512MouseClicked
+        klikattuPelipakkaa(slotti512);
+    }//GEN-LAST:event_slotti512MouseClicked
+
+    private void slotti511MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti511MouseClicked
+        klikattuPelipakkaa(slotti511);
+    }//GEN-LAST:event_slotti511MouseClicked
+
+    private void slotti510MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti510MouseClicked
+        klikattuPelipakkaa(slotti510);
+    }//GEN-LAST:event_slotti510MouseClicked
+
+    private void slotti59MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti59MouseClicked
+        klikattuPelipakkaa(slotti59);
+    }//GEN-LAST:event_slotti59MouseClicked
+
+    private void slotti58MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti58MouseClicked
+        klikattuPelipakkaa(slotti58);
+    }//GEN-LAST:event_slotti58MouseClicked
+
+    private void slotti57MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti57MouseClicked
+        klikattuPelipakkaa(slotti57);
+    }//GEN-LAST:event_slotti57MouseClicked
+
+    private void slotti56MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti56MouseClicked
+        klikattuPelipakkaa(slotti56);
+    }//GEN-LAST:event_slotti56MouseClicked
+
+    private void slotti55MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti55MouseClicked
+        klikattuPelipakkaa(slotti55);
+    }//GEN-LAST:event_slotti55MouseClicked
+
+    private void slotti54MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti54MouseClicked
+        klikattuPelipakkaa(slotti54);
+    }//GEN-LAST:event_slotti54MouseClicked
+
+    private void slotti53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti53MouseClicked
+        klikattuPelipakkaa(slotti53);
+    }//GEN-LAST:event_slotti53MouseClicked
+
+    private void slotti52MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti52MouseClicked
+        klikattuPelipakkaa(slotti52);
+    }//GEN-LAST:event_slotti52MouseClicked
+
+    private void slotti51MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti51MouseClicked
+        klikattuPelipakkaa(slotti51);
+    }//GEN-LAST:event_slotti51MouseClicked
+
+    private void slotti50MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti50MouseClicked
+        klikattuPelipakkaa(slotti50);
+    }//GEN-LAST:event_slotti50MouseClicked
+
+    private void slotti613MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti613MouseClicked
+        klikattuPelipakkaa(slotti613);
+    }//GEN-LAST:event_slotti613MouseClicked
+
+    private void slotti612MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti612MouseClicked
+        klikattuPelipakkaa(slotti612);
+    }//GEN-LAST:event_slotti612MouseClicked
+
+    private void slotti611MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti611MouseClicked
+        klikattuPelipakkaa(slotti611);
+    }//GEN-LAST:event_slotti611MouseClicked
+
+    private void slotti610MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti610MouseClicked
+        klikattuPelipakkaa(slotti610);
+    }//GEN-LAST:event_slotti610MouseClicked
+
+    private void slotti69MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti69MouseClicked
+        klikattuPelipakkaa(slotti69);
+    }//GEN-LAST:event_slotti69MouseClicked
+
+    private void slotti68MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti68MouseClicked
+        klikattuPelipakkaa(slotti68);
+    }//GEN-LAST:event_slotti68MouseClicked
+
+    private void slotti67MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti67MouseClicked
+        klikattuPelipakkaa(slotti67);
+    }//GEN-LAST:event_slotti67MouseClicked
+
+    private void slotti66MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti66MouseClicked
+        klikattuPelipakkaa(slotti66);
+    }//GEN-LAST:event_slotti66MouseClicked
+
+    private void slotti65MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti65MouseClicked
+        klikattuPelipakkaa(slotti65);
+    }//GEN-LAST:event_slotti65MouseClicked
+
+    private void slotti64MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti64MouseClicked
+        klikattuPelipakkaa(slotti64);
+    }//GEN-LAST:event_slotti64MouseClicked
+
+    private void slotti63MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti63MouseClicked
+        klikattuPelipakkaa(slotti63);
+    }//GEN-LAST:event_slotti63MouseClicked
+
+    private void slotti62MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti62MouseClicked
+        klikattuPelipakkaa(slotti62);
+    }//GEN-LAST:event_slotti62MouseClicked
+
+    private void slotti61MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti61MouseClicked
+        klikattuPelipakkaa(slotti61);
+    }//GEN-LAST:event_slotti61MouseClicked
+
+    private void slotti60MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_slotti60MouseClicked
+        klikattuPelipakkaa(slotti60);
+    }//GEN-LAST:event_slotti60MouseClicked
+
+    private void maalipakka0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_maalipakka0MouseClicked
+        klikattu(maalipakka0);
+    }//GEN-LAST:event_maalipakka0MouseClicked
+
+    private void maalipakka1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_maalipakka1MouseClicked
+        klikattu(maalipakka1);
+    }//GEN-LAST:event_maalipakka1MouseClicked
+
+    private void maalipakka2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_maalipakka2MouseClicked
+        klikattu(maalipakka2);
+    }//GEN-LAST:event_maalipakka2MouseClicked
+
+    private void maalipakka3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_maalipakka3MouseClicked
+        klikattu(maalipakka3);
+    }//GEN-LAST:event_maalipakka3MouseClicked
+
+    private void jakopakka00MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jakopakka00MouseClicked
+        klikattuJakopakkaa();
+    }//GEN-LAST:event_jakopakka00MouseClicked
+
+    private void jakopakka0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jakopakka0MouseClicked
+        klikattuJakopakanOikeinpainKortteja(jakopakka0);
+    }//GEN-LAST:event_jakopakka0MouseClicked
+
+    private void jakopakka1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jakopakka1MouseClicked
+        klikattuJakopakanOikeinpainKortteja(jakopakka1);
+    }//GEN-LAST:event_jakopakka1MouseClicked
+
+    private void jakopakka2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jakopakka2MouseClicked
+        klikattuJakopakanOikeinpainKortteja(jakopakka2);
+    }//GEN-LAST:event_jakopakka2MouseClicked
+
+    private void takaSlotti00MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_takaSlotti00MouseClicked
+        if(aktiivinen != null)
+            klikattuPelipakkaa(slotti00);
+    }//GEN-LAST:event_takaSlotti00MouseClicked
+
+    private void takaSlotti10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_takaSlotti10MouseClicked
+        if(aktiivinen != null)
+            klikattuPelipakkaa(slotti10);
+    }//GEN-LAST:event_takaSlotti10MouseClicked
+
+    private void takaSlotti20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_takaSlotti20MouseClicked
+        if(aktiivinen != null)
+            klikattuPelipakkaa(slotti20);
+    }//GEN-LAST:event_takaSlotti20MouseClicked
+
+    private void takaSlotti30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_takaSlotti30MouseClicked
+        if(aktiivinen != null)
+            klikattuPelipakkaa(slotti30);
+    }//GEN-LAST:event_takaSlotti30MouseClicked
+
+    private void takaSlotti40MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_takaSlotti40MouseClicked
+        if(aktiivinen != null)
+            klikattuPelipakkaa(slotti40);
+    }//GEN-LAST:event_takaSlotti40MouseClicked
+
+    private void takaSlotti50MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_takaSlotti50MouseClicked
+        if(aktiivinen != null)
+            klikattuPelipakkaa(slotti50);
+    }//GEN-LAST:event_takaSlotti50MouseClicked
+
+    private void takaSlotti60MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_takaSlotti60MouseClicked
+        if(aktiivinen != null)
+            klikattuPelipakkaa(slotti60);
+    }//GEN-LAST:event_takaSlotti60MouseClicked
     
     /**
      * @param args the command line arguments
@@ -539,7 +2006,6 @@ public class GUI extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel LABEL;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JLayeredPane jakopakka;
     private javax.swing.JLabel jakopakka0;
@@ -596,32 +2062,104 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel slotti27;
     private javax.swing.JLabel slotti28;
     private javax.swing.JLabel slotti29;
+    private javax.swing.JLayeredPane slotti3;
+    private javax.swing.JLabel slotti30;
+    private javax.swing.JLabel slotti31;
+    private javax.swing.JLabel slotti310;
+    private javax.swing.JLabel slotti311;
+    private javax.swing.JLabel slotti312;
+    private javax.swing.JLabel slotti313;
+    private javax.swing.JLabel slotti32;
+    private javax.swing.JLabel slotti33;
+    private javax.swing.JLabel slotti34;
+    private javax.swing.JLabel slotti35;
+    private javax.swing.JLabel slotti36;
+    private javax.swing.JLabel slotti37;
+    private javax.swing.JLabel slotti38;
+    private javax.swing.JLabel slotti39;
+    private javax.swing.JLayeredPane slotti4;
+    private javax.swing.JLabel slotti40;
+    private javax.swing.JLabel slotti41;
+    private javax.swing.JLabel slotti410;
+    private javax.swing.JLabel slotti411;
+    private javax.swing.JLabel slotti412;
+    private javax.swing.JLabel slotti413;
+    private javax.swing.JLabel slotti42;
+    private javax.swing.JLabel slotti43;
+    private javax.swing.JLabel slotti44;
+    private javax.swing.JLabel slotti45;
+    private javax.swing.JLabel slotti46;
+    private javax.swing.JLabel slotti47;
+    private javax.swing.JLabel slotti48;
+    private javax.swing.JLabel slotti49;
+    private javax.swing.JLayeredPane slotti5;
+    private javax.swing.JLabel slotti50;
+    private javax.swing.JLabel slotti51;
+    private javax.swing.JLabel slotti510;
+    private javax.swing.JLabel slotti511;
+    private javax.swing.JLabel slotti512;
+    private javax.swing.JLabel slotti513;
+    private javax.swing.JLabel slotti52;
+    private javax.swing.JLabel slotti53;
+    private javax.swing.JLabel slotti54;
+    private javax.swing.JLabel slotti55;
+    private javax.swing.JLabel slotti56;
+    private javax.swing.JLabel slotti57;
+    private javax.swing.JLabel slotti58;
+    private javax.swing.JLabel slotti59;
+    private javax.swing.JLayeredPane slotti6;
+    private javax.swing.JLabel slotti60;
+    private javax.swing.JLabel slotti61;
+    private javax.swing.JLabel slotti610;
+    private javax.swing.JLabel slotti611;
+    private javax.swing.JLabel slotti612;
+    private javax.swing.JLabel slotti613;
+    private javax.swing.JLabel slotti62;
+    private javax.swing.JLabel slotti63;
+    private javax.swing.JLabel slotti64;
+    private javax.swing.JLabel slotti65;
+    private javax.swing.JLabel slotti66;
+    private javax.swing.JLabel slotti67;
+    private javax.swing.JLabel slotti68;
+    private javax.swing.JLabel slotti69;
     private javax.swing.JLayeredPane takaSlotti0;
-    private javax.swing.JLabel takaSlotti11;
+    private javax.swing.JLabel takaSlotti00;
+    private javax.swing.JLayeredPane takaSlotti1;
+    private javax.swing.JLabel takaSlotti10;
+    private javax.swing.JLayeredPane takaSlotti2;
+    private javax.swing.JLabel takaSlotti20;
+    private javax.swing.JLayeredPane takaSlotti3;
+    private javax.swing.JLabel takaSlotti30;
+    private javax.swing.JLayeredPane takaSlotti4;
+    private javax.swing.JLabel takaSlotti40;
+    private javax.swing.JLayeredPane takaSlotti5;
+    private javax.swing.JLabel takaSlotti50;
+    private javax.swing.JLayeredPane takaSlotti6;
+    private javax.swing.JLabel takaSlotti60;
     // End of variables declaration//GEN-END:variables
     private GUISovellus guiSovellus;
     private KomentoKirjasto komentoKirjasto;
     private JLabel aktiivinen;
     private int aktiivistenMaaraJosUseampi;
     
-    private void klikattuSiirra(JLabel korttiLabel){
-       if(guiSovellus.onkoKortti(korttiLabel.getName())){
-            if(aktiivinen == null){    
-                if(guiSovellus.onkoPelipakanPaallimmainen(korttiLabel.getName())){
-                    aktiivinen = korttiLabel;
-                    korttiLabel.setEnabled(false);
-                }
-            }
-            else {
-                //if(aktiivistenMaaraJosUseampi != 0) TÄTÄ JOUTUU EHKÄ KÄYTTÄMÄÄN
-                guiSovellus.pushKomento(komentoKirjasto.siirra(aktiivinen.getName(), korttiLabel.getName()));
-                paivita();
-            }
+    private void klikattu(JLabel korttiLabel){
+
+        if(aktiivinen == null){
+            aktiivinen = korttiLabel;
+            korttiLabel.setEnabled(false);
+            
         }
+        else {
+            //if(aktiivistenMaaraJosUseampi != 0) TÄTÄ JOUTUU EHKÄ KÄYTTÄMÄÄN
+            guiSovellus.pushKomento(komentoKirjasto.siirra(aktiivinen.getName(), korttiLabel.getName()));
+            paivita();
+        }
+
     }
-    private void klikattuSiirraPelipakasta(JLabel korttiLabel){
-        if(guiSovellus.onkoKortti(korttiLabel.getName())){
-            if(aktiivinen == null){
+    private void klikattuPelipakkaa(JLabel korttiLabel){
+
+        if(aktiivinen == null){
+            if(guiSovellus.onkoPelipakkaOikeinPain(korttiLabel.getName())){
                 if(guiSovellus.onkoPelipakanPaallimmainen(korttiLabel.getName())){
                     aktiivinen = korttiLabel;
                     korttiLabel.setEnabled(false);
@@ -632,15 +2170,27 @@ public class GUI extends javax.swing.JFrame {
                     maalaaAlaspain((JLayeredPane) korttiLabel.getParent(), aktiivistenMaaraJosUseampi);
                 }
             }
-            else {
-                if(aktiivistenMaaraJosUseampi == 0)
-                    guiSovellus.pushKomento(komentoKirjasto.siirra(aktiivinen.getName(), korttiLabel.getName()));
-                else
-                    guiSovellus.pushKomento(komentoKirjasto.siirraMonta(aktiivinen.getName(), korttiLabel.getName(), aktiivistenMaaraJosUseampi));
-                paivita();
-                
+            else{
+                    guiSovellus.pushKomento(komentoKirjasto.kaanna(korttiLabel.getName()));
+                    paivita();
             }
         }
+        else {
+            if(aktiivistenMaaraJosUseampi == 0)
+                guiSovellus.pushKomento(komentoKirjasto.siirra(aktiivinen.getName(), korttiLabel.getName()));
+            else
+                guiSovellus.pushKomento(komentoKirjasto.siirraMonta(aktiivinen.getName(), korttiLabel.getName(), aktiivistenMaaraJosUseampi));
+            paivita();
+
+        }
+    }
+    private void klikattuJakopakkaa(){
+            guiSovellus.pushKomento(komentoKirjasto.kaanna(jakopakka00.getName()));
+            paivita();
+    }
+    private void klikattuJakopakanOikeinpainKortteja(JLabel korttiLabel){
+        if(guiSovellus.onkoJakopakanPaallimmainen(korttiLabel.getName()))
+            klikattu(korttiLabel);
     }
     private void tyhjennaAktiivinen(){
         if(aktiivistenMaaraJosUseampi == 0){
@@ -682,7 +2232,13 @@ public class GUI extends javax.swing.JFrame {
             korttiLabel.setIcon(guiSovellus.getKortinKuva(korttiLabel.getName()));
         else
             korttiLabel.setIcon(guiSovellus.getTyhjaKortti());
-        }
+    }
+    private void paivitaTakaSlotinTila(JLabel korttiLabel){
+        if(guiSovellus.onkoKortti(korttiLabel.getName()))
+            korttiLabel.setVisible(false);
+        else
+            korttiLabel.setVisible(true);
+    }
     
     public void alusta(GUISovellus sovellus){
         guiSovellus = sovellus;
@@ -725,5 +2281,35 @@ public class GUI extends javax.swing.JFrame {
             
             paivitaTila(korttiLabel);
         }
+        for(int i = slotti3.getComponentCount() -1; i >= 0; i--){
+            javax.swing.JLabel korttiLabel = (javax.swing.JLabel) slotti3.getComponent(i);
+            
+            paivitaTila(korttiLabel);
+        }
+        for(int i = slotti4.getComponentCount() -1; i >= 0; i--){
+            javax.swing.JLabel korttiLabel = (javax.swing.JLabel) slotti4.getComponent(i);
+            
+            paivitaTila(korttiLabel);
+        }
+        for(int i = slotti5.getComponentCount() -1; i >= 0; i--){
+            javax.swing.JLabel korttiLabel = (javax.swing.JLabel) slotti5.getComponent(i);
+            
+            paivitaTila(korttiLabel);
+        }
+        for(int i = slotti6.getComponentCount() -1; i >= 0; i--){
+            javax.swing.JLabel korttiLabel = (javax.swing.JLabel) slotti6.getComponent(i);
+            
+            paivitaTila(korttiLabel);
+        }
+        paivitaTakaSlottienTila();
+    }
+    private void paivitaTakaSlottienTila(){
+        paivitaTakaSlotinTila(takaSlotti00);
+        paivitaTakaSlotinTila(takaSlotti10);
+        paivitaTakaSlotinTila(takaSlotti20);
+        paivitaTakaSlotinTila(takaSlotti30);
+        paivitaTakaSlotinTila(takaSlotti40);
+        paivitaTakaSlotinTila(takaSlotti50);
+        paivitaTakaSlotinTila(takaSlotti60);
     }
 }

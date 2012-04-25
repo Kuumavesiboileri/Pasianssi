@@ -67,7 +67,6 @@ public class Sovellus {
      * Kertoo, onko sovelluksen sisältämän Korttipakat -luokan olion jakopakassa väärinpäin olevia kortteja.
      * @return Onko jakopakassa väärinpäin olevia kortteja.
      */
-    
     public boolean onkoJakopakassaVaarinpainKortteja(){
         return korttipakat.onkoJakopakassaVaarinpainKortteja();
     }

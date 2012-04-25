@@ -39,4 +39,13 @@ public class KomentoKirjasto {
         return komento;
     }
     
+    public HashMap<String, String> kaanna(String kortinNimi){
+        komento = new HashMap<String, String>();
+        PseudoKortti pakka = new PseudoKortti(kortinNimi);
+        komento.put("komento", "käännä");
+        komento.put("pakka", pakka.getPakka());
+        komento.put("i", Integer.toString(pakka.getPakanJarjestysnumero()));
+        return komento;
+    }
+    
 }
