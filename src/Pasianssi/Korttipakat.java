@@ -64,7 +64,11 @@ public class Korttipakat {
                         if(i==3)
                             pelipakka[i].setKortti(new Kortti(Maa.HERTTA, 1));
                         else
-                            pelipakka[i].setKortti(alkupakka.removeKortti());
+                            if(i==4)
+                                pelipakka[i].setKortti(new Kortti(Maa.PATA, 13));
+                            else
+                                pelipakka[i].setKortti(alkupakka.removeKortti());
+                            
         }
         
         for(int i = 0; i < 4; i++)
@@ -136,5 +140,8 @@ public class Korttipakat {
     
     public boolean onkoJakopakassaVaarinpainKortteja(){
         return jakopakka.onkoVaarinpain();
+    }
+    public int pelipakanAlapakanKoko(int i){
+        return pelipakka[i].alimmaistenKoko();
     }
 }

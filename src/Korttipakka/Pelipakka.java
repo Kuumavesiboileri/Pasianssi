@@ -126,6 +126,9 @@ public class Pelipakka implements PakkaRajapinta{
     public int paallimmaistenKoko(){
         return oikeinpain.getKoko();
     }
+    public int alimmaistenKoko(){
+    return vaarinpain.getKoko();
+    }
     public boolean isEmpty(){
         if (oikeinpain.isEmpty() && vaarinpain.isEmpty())
                 return true;

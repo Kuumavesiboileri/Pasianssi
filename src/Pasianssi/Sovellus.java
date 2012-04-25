@@ -70,6 +70,10 @@ public class Sovellus {
     public boolean onkoJakopakassaVaarinpainKortteja(){
         return korttipakat.onkoJakopakassaVaarinpainKortteja();
     }
+    public int pelipakanAlapakanKoko(int i){
+        return korttipakat.pelipakanAlapakanKoko(i);
+    }
+            
 
     /**
      * Metodi alustaa kaikki pelin komennot private HashMappiin.

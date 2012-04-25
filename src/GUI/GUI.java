@@ -10,6 +10,7 @@
  */
 package GUI;
 
+import java.awt.Point;
 import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
 
@@ -150,6 +151,33 @@ public class GUI extends javax.swing.JFrame {
         maalipakka1 = new javax.swing.JLabel();
         maalipakka2 = new javax.swing.JLabel();
         maalipakka3 = new javax.swing.JLabel();
+        takaKortit6 = new javax.swing.JLayeredPane();
+        takaKortti65 = new javax.swing.JLabel();
+        takaKortti64 = new javax.swing.JLabel();
+        takaKortti63 = new javax.swing.JLabel();
+        takaKortti62 = new javax.swing.JLabel();
+        takaKortti61 = new javax.swing.JLabel();
+        takaKortti60 = new javax.swing.JLabel();
+        takaKortit5 = new javax.swing.JLayeredPane();
+        takaKortti54 = new javax.swing.JLabel();
+        takaKortti53 = new javax.swing.JLabel();
+        takaKortti52 = new javax.swing.JLabel();
+        takaKortti51 = new javax.swing.JLabel();
+        takaKortti50 = new javax.swing.JLabel();
+        takaKortit4 = new javax.swing.JLayeredPane();
+        takaKortti43 = new javax.swing.JLabel();
+        takaKortti42 = new javax.swing.JLabel();
+        takaKortti41 = new javax.swing.JLabel();
+        takaKortti40 = new javax.swing.JLabel();
+        takaKortit3 = new javax.swing.JLayeredPane();
+        takaKortit32 = new javax.swing.JLabel();
+        takaKortit31 = new javax.swing.JLabel();
+        takaKortit30 = new javax.swing.JLabel();
+        takaKortit2 = new javax.swing.JLayeredPane();
+        takaKortti21 = new javax.swing.JLabel();
+        takaKortti20 = new javax.swing.JLabel();
+        takaKortit1 = new javax.swing.JLayeredPane();
+        takaKortti10 = new javax.swing.JLabel();
         takaSlotti6 = new javax.swing.JLayeredPane();
         takaSlotti60 = new javax.swing.JLabel();
         takaSlotti5 = new javax.swing.JLayeredPane();
@@ -323,7 +351,7 @@ public class GUI extends javax.swing.JFrame {
         slotti60.setBounds(0, 0, 71, 96);
         slotti6.add(slotti60, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        slotti6.setBounds(540, 140, 71, 380);
+        slotti6.setBounds(540, 170, 71, 380);
         jLayeredPane1.add(slotti6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti5.setPreferredSize(new java.awt.Dimension(71, 370));
@@ -482,7 +510,7 @@ public class GUI extends javax.swing.JFrame {
         slotti50.setBounds(0, 0, 71, 96);
         slotti5.add(slotti50, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        slotti5.setBounds(450, 140, 71, 380);
+        slotti5.setBounds(450, 165, 71, 380);
         jLayeredPane1.add(slotti5, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti4.setPreferredSize(new java.awt.Dimension(71, 370));
@@ -641,7 +669,7 @@ public class GUI extends javax.swing.JFrame {
         slotti40.setBounds(0, 0, 71, 96);
         slotti4.add(slotti40, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        slotti4.setBounds(360, 140, 71, 380);
+        slotti4.setBounds(360, 160, 71, 380);
         jLayeredPane1.add(slotti4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti3.setPreferredSize(new java.awt.Dimension(71, 370));
@@ -800,7 +828,7 @@ public class GUI extends javax.swing.JFrame {
         slotti30.setBounds(0, 0, 71, 96);
         slotti3.add(slotti30, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        slotti3.setBounds(270, 140, 71, 380);
+        slotti3.setBounds(270, 155, 71, 380);
         jLayeredPane1.add(slotti3, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti2.setPreferredSize(new java.awt.Dimension(71, 370));
@@ -959,7 +987,7 @@ public class GUI extends javax.swing.JFrame {
         slotti20.setBounds(0, 0, 71, 96);
         slotti2.add(slotti20, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        slotti2.setBounds(180, 140, 71, 380);
+        slotti2.setBounds(180, 150, 71, 380);
         jLayeredPane1.add(slotti2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti1.setPreferredSize(new java.awt.Dimension(71, 370));
@@ -1118,7 +1146,7 @@ public class GUI extends javax.swing.JFrame {
         slotti10.setBounds(0, 0, 71, 96);
         slotti1.add(slotti10, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        slotti1.setBounds(90, 140, 71, 380);
+        slotti1.setBounds(90, 145, 71, 380);
         jLayeredPane1.add(slotti1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         slotti0.setPreferredSize(new java.awt.Dimension(71, 370));
@@ -1379,6 +1407,164 @@ public class GUI extends javax.swing.JFrame {
         maalipakat.setBounds(280, 0, 350, 96);
         jLayeredPane1.add(maalipakat, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        takaKortti65.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti65.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti65.setName("takakortti 6 5"); // NOI18N
+        takaKortti65.setBounds(0, 25, 71, 96);
+        takaKortit6.add(takaKortti65, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortti64.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti64.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti64.setName("takakortti 6 4"); // NOI18N
+        takaKortti64.setBounds(0, 20, 71, 96);
+        takaKortit6.add(takaKortti64, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortti63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti63.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti63.setName("takakortti 6 3"); // NOI18N
+        takaKortti63.setBounds(0, 15, 71, 96);
+        takaKortit6.add(takaKortti63, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortti62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti62.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti62.setName("takakortti 6 2"); // NOI18N
+        takaKortti62.setBounds(0, 10, 71, 96);
+        takaKortit6.add(takaKortti62, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortti61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti61.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti61.setName("takakortti 6 1"); // NOI18N
+        takaKortti61.setBounds(0, 5, 71, 96);
+        takaKortit6.add(takaKortti61, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortti60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti60.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti60.setName("takakortti 6 0"); // NOI18N
+        takaKortti60.setBounds(0, 0, 71, 96);
+        takaKortit6.add(takaKortti60, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortit6.setBounds(540, 140, 71, 100);
+        jLayeredPane1.add(takaKortit6, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortti54.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti54.setLabelFor(slotti0);
+        takaKortti54.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti54.setName("takakortti 5 4"); // NOI18N
+        takaKortti54.setBounds(0, 20, 71, 96);
+        takaKortit5.add(takaKortti54, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortti53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti53.setLabelFor(slotti0);
+        takaKortti53.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti53.setName("takakortti 5 3"); // NOI18N
+        takaKortti53.setBounds(0, 15, 71, 96);
+        takaKortit5.add(takaKortti53, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortti52.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti52.setLabelFor(slotti0);
+        takaKortti52.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti52.setName("takakortti 5 2"); // NOI18N
+        takaKortti52.setBounds(0, 10, 71, 96);
+        takaKortit5.add(takaKortti52, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortti51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti51.setLabelFor(slotti0);
+        takaKortti51.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti51.setName("takakortti 5 1"); // NOI18N
+        takaKortti51.setBounds(0, 5, 71, 96);
+        takaKortit5.add(takaKortti51, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortti50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti50.setLabelFor(slotti0);
+        takaKortti50.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti50.setName("takakortti 5 0"); // NOI18N
+        takaKortti50.setBounds(0, 0, 71, 96);
+        takaKortit5.add(takaKortti50, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortit5.setBounds(450, 140, 71, 100);
+        jLayeredPane1.add(takaKortit5, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortti43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti43.setLabelFor(slotti0);
+        takaKortti43.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti43.setName("takakortti 4 3"); // NOI18N
+        takaKortti43.setBounds(0, 15, 71, 96);
+        takaKortit4.add(takaKortti43, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortti42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti42.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti42.setName("takakortti 4 2"); // NOI18N
+        takaKortti42.setBounds(0, 10, 71, 96);
+        takaKortit4.add(takaKortti42, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortti41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti41.setLabelFor(slotti0);
+        takaKortti41.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti41.setName("takakortti 4 1"); // NOI18N
+        takaKortti41.setBounds(0, 5, 71, 96);
+        takaKortit4.add(takaKortti41, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortti40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti40.setLabelFor(slotti0);
+        takaKortti40.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti40.setName("takakortti 4 0"); // NOI18N
+        takaKortti40.setBounds(0, 0, 71, 96);
+        takaKortit4.add(takaKortti40, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortit4.setBounds(360, 140, 71, 100);
+        jLayeredPane1.add(takaKortit4, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortit32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortit32.setLabelFor(slotti0);
+        takaKortit32.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortit32.setName("takakortti 3 2"); // NOI18N
+        takaKortit32.setBounds(0, 10, 71, 96);
+        takaKortit3.add(takaKortit32, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortit31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortit31.setLabelFor(slotti0);
+        takaKortit31.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortit31.setName("takakortti 3 1"); // NOI18N
+        takaKortit31.setBounds(0, 5, 71, 96);
+        takaKortit3.add(takaKortit31, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortit30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortit30.setLabelFor(slotti0);
+        takaKortit30.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortit30.setName("takakortti 3 0"); // NOI18N
+        takaKortit30.setBounds(0, 0, 71, 96);
+        takaKortit3.add(takaKortit30, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortit3.setBounds(270, 140, 71, 100);
+        jLayeredPane1.add(takaKortit3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortti21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti21.setLabelFor(slotti0);
+        takaKortti21.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti21.setName("takakortti 2 1"); // NOI18N
+        takaKortti21.setBounds(0, 5, 71, 96);
+        takaKortit2.add(takaKortti21, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortti20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti20.setLabelFor(slotti0);
+        takaKortti20.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti20.setName("takakortti 2 0"); // NOI18N
+        takaKortti20.setBounds(0, 0, 71, 96);
+        takaKortit2.add(takaKortti20, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortit2.setBounds(180, 140, 71, 100);
+        jLayeredPane1.add(takaKortit2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortti10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/BACK_0.png"))); // NOI18N
+        takaKortti10.setLabelFor(slotti0);
+        takaKortti10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        takaKortti10.setName("takakortti 1 0"); // NOI18N
+        takaKortti10.setBounds(0, 0, 71, 96);
+        takaKortit1.add(takaKortti10, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        takaKortit1.setBounds(90, 140, 71, 100);
+        jLayeredPane1.add(takaKortit1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         takaSlotti60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/EMPTYSLOT.png"))); // NOI18N
         takaSlotti60.setLabelFor(slotti0);
         takaSlotti60.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -1391,7 +1577,7 @@ public class GUI extends javax.swing.JFrame {
         takaSlotti60.setBounds(0, 0, 71, 96);
         takaSlotti6.add(takaSlotti60, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        takaSlotti6.setBounds(540, 140, 70, 100);
+        takaSlotti6.setBounds(540, 140, 71, 100);
         jLayeredPane1.add(takaSlotti6, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         takaSlotti50.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/EMPTYSLOT.png"))); // NOI18N
@@ -1406,7 +1592,7 @@ public class GUI extends javax.swing.JFrame {
         takaSlotti50.setBounds(0, 0, 71, 96);
         takaSlotti5.add(takaSlotti50, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        takaSlotti5.setBounds(450, 140, 70, 100);
+        takaSlotti5.setBounds(450, 140, 71, 100);
         jLayeredPane1.add(takaSlotti5, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         takaSlotti40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/EMPTYSLOT.png"))); // NOI18N
@@ -1421,7 +1607,7 @@ public class GUI extends javax.swing.JFrame {
         takaSlotti40.setBounds(0, 0, 71, 96);
         takaSlotti4.add(takaSlotti40, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        takaSlotti4.setBounds(360, 140, 70, 100);
+        takaSlotti4.setBounds(360, 140, 71, 100);
         jLayeredPane1.add(takaSlotti4, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         takaSlotti30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/EMPTYSLOT.png"))); // NOI18N
@@ -1436,7 +1622,7 @@ public class GUI extends javax.swing.JFrame {
         takaSlotti30.setBounds(0, 0, 71, 96);
         takaSlotti3.add(takaSlotti30, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        takaSlotti3.setBounds(270, 140, 70, 100);
+        takaSlotti3.setBounds(270, 140, 71, 100);
         jLayeredPane1.add(takaSlotti3, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         takaSlotti20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/EMPTYSLOT.png"))); // NOI18N
@@ -1451,7 +1637,7 @@ public class GUI extends javax.swing.JFrame {
         takaSlotti20.setBounds(0, 0, 71, 96);
         takaSlotti2.add(takaSlotti20, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        takaSlotti2.setBounds(180, 140, 70, 100);
+        takaSlotti2.setBounds(180, 140, 71, 100);
         jLayeredPane1.add(takaSlotti2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         takaSlotti10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/EMPTYSLOT.png"))); // NOI18N
@@ -1466,7 +1652,7 @@ public class GUI extends javax.swing.JFrame {
         takaSlotti10.setBounds(0, 0, 71, 96);
         takaSlotti1.add(takaSlotti10, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        takaSlotti1.setBounds(90, 140, 70, 100);
+        takaSlotti1.setBounds(90, 140, 71, 100);
         jLayeredPane1.add(takaSlotti1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         takaSlotti0.setMaximumSize(new java.awt.Dimension(72, 96));
@@ -1484,7 +1670,7 @@ public class GUI extends javax.swing.JFrame {
         takaSlotti00.setBounds(0, 0, 71, 96);
         takaSlotti0.add(takaSlotti00, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        takaSlotti0.setBounds(0, 140, 70, 100);
+        takaSlotti0.setBounds(0, 140, 71, 100);
         jLayeredPane1.add(takaSlotti0, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -2122,6 +2308,33 @@ public class GUI extends javax.swing.JFrame {
     private javax.swing.JLabel slotti67;
     private javax.swing.JLabel slotti68;
     private javax.swing.JLabel slotti69;
+    private javax.swing.JLayeredPane takaKortit1;
+    private javax.swing.JLayeredPane takaKortit2;
+    private javax.swing.JLayeredPane takaKortit3;
+    private javax.swing.JLabel takaKortit30;
+    private javax.swing.JLabel takaKortit31;
+    private javax.swing.JLabel takaKortit32;
+    private javax.swing.JLayeredPane takaKortit4;
+    private javax.swing.JLayeredPane takaKortit5;
+    private javax.swing.JLayeredPane takaKortit6;
+    private javax.swing.JLabel takaKortti10;
+    private javax.swing.JLabel takaKortti20;
+    private javax.swing.JLabel takaKortti21;
+    private javax.swing.JLabel takaKortti40;
+    private javax.swing.JLabel takaKortti41;
+    private javax.swing.JLabel takaKortti42;
+    private javax.swing.JLabel takaKortti43;
+    private javax.swing.JLabel takaKortti50;
+    private javax.swing.JLabel takaKortti51;
+    private javax.swing.JLabel takaKortti52;
+    private javax.swing.JLabel takaKortti53;
+    private javax.swing.JLabel takaKortti54;
+    private javax.swing.JLabel takaKortti60;
+    private javax.swing.JLabel takaKortti61;
+    private javax.swing.JLabel takaKortti62;
+    private javax.swing.JLabel takaKortti63;
+    private javax.swing.JLabel takaKortti64;
+    private javax.swing.JLabel takaKortti65;
     private javax.swing.JLayeredPane takaSlotti0;
     private javax.swing.JLabel takaSlotti00;
     private javax.swing.JLayeredPane takaSlotti1;
@@ -2205,11 +2418,19 @@ public class GUI extends javax.swing.JFrame {
     }
     
     private void maalaaAlaspain(JLayeredPane pane, int i){
-        for(int j = pane.getComponentCount() -1; j >= i; j--){
+        int k = 0;
+        while(!pane.getComponent(k).isVisible())
+            k++;
+        for(int j = 0; j < i; j++){
+            JLabel korttiLabel = (javax.swing.JLabel) pane.getComponent(k);
+            korttiLabel.setEnabled(false);
+            k++;
+        }
+        /*for(int j = pane.getComponentCount() -1; j >= i; j--){
             JLabel korttiLabel = (javax.swing.JLabel) pane.getComponent(j);
             if(korttiLabel.isVisible())
                 korttiLabel.setEnabled(false);
-        }
+        }*/
     }
     private void poistaMaalausAlaspain(JLayeredPane pane, int i){
         for(int j = pane.getComponentCount() -1; j >= i; j--){
@@ -2238,6 +2459,12 @@ public class GUI extends javax.swing.JFrame {
             korttiLabel.setVisible(false);
         else
             korttiLabel.setVisible(true);
+    }
+    private void paivitaTakaKortinTila(JLabel korttiLabel){
+        if(guiSovellus.onkoKortti(korttiLabel.getName()))
+            korttiLabel.setVisible(true);
+        else
+            korttiLabel.setVisible(false);
     }
     
     public void alusta(GUISovellus sovellus){
@@ -2273,33 +2500,53 @@ public class GUI extends javax.swing.JFrame {
         }
         for(int i = slotti1.getComponentCount() -1; i >= 0; i--){
             javax.swing.JLabel korttiLabel = (javax.swing.JLabel) slotti1.getComponent(i);
-            
             paivitaTila(korttiLabel);
+        }
+        if(guiSovellus.onkoTakakorttienMaaraMuuttunut(1)){
+            paivitaSlotinPaikka(slotti1);
+            paivitaTakaKorttienTila(takaKortit1);
         }
         for(int i = slotti2.getComponentCount() -1; i >= 0; i--){
             javax.swing.JLabel korttiLabel = (javax.swing.JLabel) slotti2.getComponent(i);
-            
             paivitaTila(korttiLabel);
         }
+        if(guiSovellus.onkoTakakorttienMaaraMuuttunut(2)){
+            paivitaSlotinPaikka(slotti2);
+            paivitaTakaKorttienTila(takaKortit2);
+        }
+            
         for(int i = slotti3.getComponentCount() -1; i >= 0; i--){
             javax.swing.JLabel korttiLabel = (javax.swing.JLabel) slotti3.getComponent(i);
-            
             paivitaTila(korttiLabel);
         }
+        if(guiSovellus.onkoTakakorttienMaaraMuuttunut(3)){
+            paivitaSlotinPaikka(slotti3);
+            paivitaTakaKorttienTila(takaKortit3);
+        }
+        
         for(int i = slotti4.getComponentCount() -1; i >= 0; i--){
             javax.swing.JLabel korttiLabel = (javax.swing.JLabel) slotti4.getComponent(i);
-            
             paivitaTila(korttiLabel);
+        }
+        if(guiSovellus.onkoTakakorttienMaaraMuuttunut(4)){
+            paivitaSlotinPaikka(slotti4);
+            paivitaTakaKorttienTila(takaKortit4);
         }
         for(int i = slotti5.getComponentCount() -1; i >= 0; i--){
             javax.swing.JLabel korttiLabel = (javax.swing.JLabel) slotti5.getComponent(i);
-            
             paivitaTila(korttiLabel);
+        }
+        if(guiSovellus.onkoTakakorttienMaaraMuuttunut(5)){
+            paivitaSlotinPaikka(slotti5);
+            paivitaTakaKorttienTila(takaKortit5);
         }
         for(int i = slotti6.getComponentCount() -1; i >= 0; i--){
             javax.swing.JLabel korttiLabel = (javax.swing.JLabel) slotti6.getComponent(i);
-            
-            paivitaTila(korttiLabel);
+                paivitaTila(korttiLabel);
+        }
+        if(guiSovellus.onkoTakakorttienMaaraMuuttunut(6)){
+            paivitaSlotinPaikka(slotti6);
+            paivitaTakaKorttienTila(takaKortit6);
         }
         paivitaTakaSlottienTila();
     }
@@ -2311,5 +2558,15 @@ public class GUI extends javax.swing.JFrame {
         paivitaTakaSlotinTila(takaSlotti40);
         paivitaTakaSlotinTila(takaSlotti50);
         paivitaTakaSlotinTila(takaSlotti60);
+    }
+    private void paivitaTakaKorttienTila(JLayeredPane paneeli){
+        for(int i = paneeli.getComponentCount() -1; i >= 0; i--){
+            javax.swing.JLabel korttiLabel = (javax.swing.JLabel) paneeli.getComponent(i);
+            paivitaTakaKortinTila(korttiLabel);
+        }
+    }
+    private void paivitaSlotinPaikka(JLayeredPane slotti){
+        Point point = slotti.getLocation();
+        slotti.setLocation(point.x, point.y -5);
     }
 }

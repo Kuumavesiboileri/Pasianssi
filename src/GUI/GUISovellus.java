@@ -25,6 +25,7 @@ public class GUISovellus implements UserInterface{
     private ArrayList<LinkedList<Kortti>> maalipakat;
     
     private int[] pakassaKortteja;
+    private int[] pakassaTakaKortteja;
     
     public GUISovellus(){
         gui = new GUI();
@@ -32,6 +33,7 @@ public class GUISovellus implements UserInterface{
         pelipakat = new ArrayList<LinkedList<Kortti>>(7);
         maalipakat = new ArrayList<LinkedList<Kortti>>(4);
         pakassaKortteja = new int[7];
+        pakassaTakaKortteja = new int[7];
     }
     
     @Override
@@ -46,6 +48,7 @@ public class GUISovellus implements UserInterface{
         for(int i = 0; i < 7; i++){
             pelipakat.add(sovellus.getKuva("pelipakka", i));
             pakassaKortteja[i] = pelipakat.get(i).size();   
+            pakassaTakaKortteja[i] = sovellus.pelipakanAlapakanKoko(i);
         }
         gui.alusta(this);
         
@@ -75,6 +78,10 @@ public class GUISovellus implements UserInterface{
             if(kasiteltavaPakka.isEmpty())
                 return false;
             if(kortinPaikka.getKortinJarjestysnumero() >= kasiteltavaPakka.size())
+                return false;
+        }
+        if(kortinPaikka.getPakka().equals("takakortti")){
+            if(pakassaTakaKortteja[kortinPaikka.getPakanJarjestysnumero()] <= kortinPaikka.getKortinJarjestysnumero())
                 return false;
         }
         return true;
@@ -127,6 +134,9 @@ public class GUISovellus implements UserInterface{
         PseudoKortti pakka = new PseudoKortti(kortinNimi);
         return jakopakka.size()-1 == pakka.getKortinJarjestysnumero();
     }
+    public int pelipakanAlapakanKoko(int i){
+        return sovellus.pelipakanAlapakanKoko(i);
+    }
     private void paivitaPakat(){
         paivitaPelipakat();
         paivitaMaalipakat();
@@ -157,6 +167,12 @@ public class GUISovellus implements UserInterface{
             }
             pakassaKortteja[i] = koko; 
         }
+    }
+    public boolean onkoTakakorttienMaaraMuuttunut(int i){
+        if(pakassaTakaKortteja[i] == sovellus.pelipakanAlapakanKoko(i))
+            return false;
+        pakassaTakaKortteja[i] = sovellus.pelipakanAlapakanKoko(i);
+        return true;   
     }
     private ImageIcon kortinKuva(Kortti kortti){
         String osoite = "/GUI/Images/" + kortti.getMaa() + "_" + kortti.getArvo() + ".png";
