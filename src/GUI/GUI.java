@@ -2088,19 +2088,19 @@ public class GUI extends javax.swing.JFrame {
     }//GEN-LAST:event_slotti60MouseClicked
 
     private void maalipakka0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_maalipakka0MouseClicked
-        klikattu(maalipakka0);
+        klikattuMaalipakkaa(maalipakka0);
     }//GEN-LAST:event_maalipakka0MouseClicked
 
     private void maalipakka1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_maalipakka1MouseClicked
-        klikattu(maalipakka1);
+        klikattuMaalipakkaa(maalipakka1);
     }//GEN-LAST:event_maalipakka1MouseClicked
 
     private void maalipakka2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_maalipakka2MouseClicked
-        klikattu(maalipakka2);
+        klikattuMaalipakkaa(maalipakka2);
     }//GEN-LAST:event_maalipakka2MouseClicked
 
     private void maalipakka3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_maalipakka3MouseClicked
-        klikattu(maalipakka3);
+        klikattuMaalipakkaa(maalipakka3);
     }//GEN-LAST:event_maalipakka3MouseClicked
 
     private void jakopakka00MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jakopakka00MouseClicked
@@ -2397,10 +2397,25 @@ public class GUI extends javax.swing.JFrame {
 
         }
     }
+    private void klikattuMaalipakkaa(JLabel korttiLabel){
+            if(aktiivinen == null){
+                if(guiSovellus.onkoKortti(korttiLabel.getName())){
+                    aktiivinen = korttiLabel;
+                    korttiLabel.setEnabled(false);
+                }
+        }
+        else {
+            //if(aktiivistenMaaraJosUseampi != 0) TÄTÄ JOUTUU EHKÄ KÄYTTÄMÄÄN
+            guiSovellus.pushKomento(komentoKirjasto.siirra(aktiivinen.getName(), korttiLabel.getName()));
+            paivita();
+        }
+    }
+    
     private void klikattuJakopakkaa(){
             guiSovellus.pushKomento(komentoKirjasto.kaanna(jakopakka00.getName()));
             paivita();
     }
+    
     private void klikattuJakopakanOikeinpainKortteja(JLabel korttiLabel){
         if(guiSovellus.onkoJakopakanPaallimmainen(korttiLabel.getName()))
             klikattu(korttiLabel);
