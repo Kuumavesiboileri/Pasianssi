@@ -16,8 +16,8 @@ import javax.swing.JLayeredPane;
 
 
 /**
- *
- * @author atte
+ * Pasianssi -pelin graaffinen käyttöliittymä.
+ * @author Adio
  */
 public class GUI extends javax.swing.JFrame {
 
@@ -2354,21 +2354,18 @@ public class GUI extends javax.swing.JFrame {
     private KomentoKirjasto komentoKirjasto;
     private JLabel aktiivinen;
     private int aktiivistenMaaraJosUseampi;
-    
-    private void klikattu(JLabel korttiLabel){
 
-        if(aktiivinen == null){
-            aktiivinen = korttiLabel;
-            korttiLabel.setEnabled(false);
-            
-        }
-        else {
-            //if(aktiivistenMaaraJosUseampi != 0) TÄTÄ JOUTUU EHKÄ KÄYTTÄMÄÄN
-            guiSovellus.pushKomento(komentoKirjasto.siirra(aktiivinen.getName(), korttiLabel.getName()));
-            paivita();
-        }
-
-    }
+    /**
+     * Aktivoi kortin, tai puskee asianmukaisen komennon GUISovellukselle.
+     * 
+     * Jos aktiivista korttia ei ole vielä valittu, aktivoi klikatun kortin/pinon 
+     * kortteja. Jos aktiivinen on valittu arvioi klikatun kortin positiota 
+     * korttipelissä, ja kutsuu GUISovelluksen asianmukaista komentoa ("siirä" tai "siirräMonta").
+     * 
+     * Lopuksi päivittää käyttöliittymän kuvan.
+     * Metodi, jota jokainen pelipakan mouseClicked -eventti kutsuu.
+     * @param korttiLabel metodia kutsuva kortti.
+     */
     private void klikattuPelipakkaa(JLabel korttiLabel){
 
         if(aktiivinen == null){
@@ -2397,6 +2394,18 @@ public class GUI extends javax.swing.JFrame {
 
         }
     }
+    /**
+     * Riippuen, onko joku kortti aktivoitu, ei tee mitään 
+     * tai puskee "siirrä" -komennon GUISovellukselle.
+     * 
+     * Jos aktiivista korttia ei ole vielä valittu, ei tee mitään. 
+     * Jos aktiivinen on valittu kutsuu GUISovelluksen pushKomento -metodia parametrilla 
+     * "siirrä", kohteena ko. maalipakka.
+     * 
+     * Lopuksi päivittää käyttöliittymän kuvan.
+     * Metodi, jota jokainen maalipakan mouseClicked -eventti kutsuu.
+     * @param korttiLabel metodia kutsuva kortti.
+     */
     private void klikattuMaalipakkaa(JLabel korttiLabel){
             if(aktiivinen == null){
                 if(guiSovellus.onkoKortti(korttiLabel.getName())){
@@ -2405,21 +2414,46 @@ public class GUI extends javax.swing.JFrame {
                 }
         }
         else {
-            //if(aktiivistenMaaraJosUseampi != 0) TÄTÄ JOUTUU EHKÄ KÄYTTÄMÄÄN
             guiSovellus.pushKomento(komentoKirjasto.siirra(aktiivinen.getName(), korttiLabel.getName()));
             paivita();
         }
     }
-    
+    /**
+     * Kutsuu GUISovelluksen pushKomento -metodia parametrilla "käännä", kohteena jakopakka.
+     * 
+     * Varsinaisen jakopakan mouseClicked -eventti kutsuu tätä metodia.
+     * Lopuksi päivittää käyttöliittymän kuvan. 
+     */
     private void klikattuJakopakkaa(){
             guiSovellus.pushKomento(komentoKirjasto.kaanna(jakopakka00.getName()));
             paivita();
     }
-    
+    /**
+     * Jos klikattu kortti on päällimmäinen jakopakan oikeinpäin oleva kortti, 
+     * aktivoi ko. kortin.
+     * Lopuksi päivittää käyttöliittymän kuvan.
+     * 
+     * @param korttiLabel metodia kutsuva kortti.
+     */
     private void klikattuJakopakanOikeinpainKortteja(JLabel korttiLabel){
-        if(guiSovellus.onkoJakopakanPaallimmainen(korttiLabel.getName()))
-            klikattu(korttiLabel);
+        if(guiSovellus.onkoJakopakanPaallimmainen(korttiLabel.getName())){
+            
+            if(aktiivinen == null){
+                aktiivinen = korttiLabel;
+                korttiLabel.setEnabled(false);
+
+            }
+            else {
+                
+                guiSovellus.pushKomento(komentoKirjasto.siirra(aktiivinen.getName(), korttiLabel.getName()));
+                paivita();
+            }
+        }
+
     }
+    /**
+     * Jos joku kortti on aktiivinen, deaktivoi tuon ja poistaa tuon korostukset GUI:sta.
+     */
     private void tyhjennaAktiivinen(){
         if(aktiivistenMaaraJosUseampi == 0){
             aktiivinen.setEnabled(true);
@@ -2431,25 +2465,29 @@ public class GUI extends javax.swing.JFrame {
             aktiivistenMaaraJosUseampi = 0;
         }
     }
-    
-    private void maalaaAlaspain(JLayeredPane pane, int i){
+    /**
+     * Metodi joka korostaa annetun slotin aktivoidut kortit i:nnestä kortista alaspäin.
+     * @param slotti Slotti, jonka kortit halutaan korostaa.
+     * @param i Ylin korostettu kortti.
+     */
+    private void maalaaAlaspain(JLayeredPane slotti, int i){
         int k = 0;
-        while(!pane.getComponent(k).isVisible())
+        while(!slotti.getComponent(k).isVisible())
             k++;
         for(int j = 0; j < i; j++){
-            JLabel korttiLabel = (javax.swing.JLabel) pane.getComponent(k);
+            JLabel korttiLabel = (javax.swing.JLabel) slotti.getComponent(k);
             korttiLabel.setEnabled(false);
             k++;
         }
-        /*for(int j = pane.getComponentCount() -1; j >= i; j--){
-            JLabel korttiLabel = (javax.swing.JLabel) pane.getComponent(j);
-            if(korttiLabel.isVisible())
-                korttiLabel.setEnabled(false);
-        }*/
     }
-    private void poistaMaalausAlaspain(JLayeredPane pane, int i){
-        for(int j = pane.getComponentCount() -1; j >= i; j--){
-            JLabel korttiLabel = (javax.swing.JLabel) pane.getComponent(j);
+    /**
+     * Metodi, joka poistaa annetun slotin aktivoitujen korttien korostuksen i:nnestä kortista alaspäin.
+     * @param slotti Slotti, jonka kortit halutaan korostaa.
+     * @param i Ylin kortti, josta korostus poistetaan.
+     */
+    private void poistaMaalausAlaspain(JLayeredPane slotti, int i){
+        for(int j = slotti.getComponentCount() -1; j >= i; j--){
+            JLabel korttiLabel = (javax.swing.JLabel) slotti.getComponent(j);
             korttiLabel.setEnabled(true);
         }
     }
@@ -2475,13 +2513,23 @@ public class GUI extends javax.swing.JFrame {
         else
             korttiLabel.setVisible(true);
     }
+    /**
+     * Jos kyseisessä paikassa kuuluisi olla kortti, muuttaa komponentin näkyväksi,
+     * jos ei muuttaa näkymättömäksi.
+     * Tarkistus hoidentaan GUISovelluksen onkoKortti -metodilla.
+     * @param korttiLabel Label -komponentin paikka.
+     */
     private void paivitaTakaKortinTila(JLabel korttiLabel){
         if(guiSovellus.onkoKortti(korttiLabel.getName()))
             korttiLabel.setVisible(true);
         else
             korttiLabel.setVisible(false);
     }
-    
+    /**
+     * Laittaa GUI:n viittaamaan annettuun GUISovellukseen ja alustaa peliin tarvittavat muuttujat, 
+     * konstruktorin toimiessa vain GUI-builderin luomien, käyttöliittymän näkyvän puolen komponenttien alustajana.
+     * @param sovellus 
+     */
     public void alusta(GUISovellus sovellus){
         guiSovellus = sovellus;
         aktiivinen = null;
@@ -2490,6 +2538,10 @@ public class GUI extends javax.swing.JFrame {
         paivita();
         this.setVisible(true);
     }
+    
+    /**
+     * Päivittää GUI:n näyttämään pelin tämänhetkisen tilanteen.
+     */
     public void paivita(){
 
         if(aktiivinen != null)
@@ -2565,6 +2617,11 @@ public class GUI extends javax.swing.JFrame {
         }
         paivitaTakaSlottienTila();
     }
+    
+    /**
+     * Päivittää GUI:n takaslottien tilan (siis sen tyhjän neliön jokaisen pelipakan alla)
+     * vastaamaan sovelluksen tilaa.
+     */
     private void paivitaTakaSlottienTila(){
         paivitaTakaSlotinTila(takaSlotti00);
         paivitaTakaSlotinTila(takaSlotti10);
@@ -2574,12 +2631,21 @@ public class GUI extends javax.swing.JFrame {
         paivitaTakaSlotinTila(takaSlotti50);
         paivitaTakaSlotinTila(takaSlotti60);
     }
+    /**
+     * * Päivittää GUI:n tietyn slotin takakorttien tilan vastaamaan sovelluksen tilaa.
+     * @param paneeli Paneeli, jonka takakortit päivitetään.
+     */
     private void paivitaTakaKorttienTila(JLayeredPane paneeli){
         for(int i = paneeli.getComponentCount() -1; i >= 0; i--){
             javax.swing.JLabel korttiLabel = (javax.swing.JLabel) paneeli.getComponent(i);
             paivitaTakaKortinTila(korttiLabel);
         }
     }
+    /**
+     * Nostaa slottia 5 yksikköä ylöspäin, kutsutaan kun slotista on käännetty takakortti.
+     * Luotu, jotta pelipakat (tai siis slotit) olisivat aina kauniisti samassa linjassa.
+     * @param slotti 
+     */
     private void paivitaSlotinPaikka(JLayeredPane slotti){
         Point point = slotti.getLocation();
         slotti.setLocation(point.x, point.y -5);
